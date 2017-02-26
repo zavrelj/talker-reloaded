@@ -1,0 +1,2 @@
+This folder contains script for new user registration.
+This folder should be given some unique name to disallow users register themselves by guessing the path to this script. This is really poor security but it's only temporary way until there's real administration of whole system including user account addition/modification/destruction.

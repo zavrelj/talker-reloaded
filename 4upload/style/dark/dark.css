@@ -1,0 +1,638 @@
+body
+{
+background: #22252E;
+color: #EF9043;
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+}
+
+/*nastavuje vsem prvkum defaultni text*/
+*
+{
+font-family: Trebuchet MS, Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+font-size: 98%;
+}
+
+h1
+{
+font-size: 200%;
+}
+
+h2
+{
+font-size: 150%;
+}
+
+h3
+{
+font-size: 125%;
+}
+
+/*text pro upozorneni, zvolen napr. u poctu novych prispevku v diskuzich*/
+.alert
+{
+color: #FF5151;
+}
+
+/*nastavuje defaultni styl vsem odkazum*/
+a
+{
+font-weight: bold;
+text-decoration: underlined;
+color: #EF9043;
+}
+
+.message_header_new a
+{
+color: #000000;
+}
+
+/*nastavuje defaultni styl vsem obrazkum*/
+img
+{
+border-width: 0px;
+}
+
+
+#horizontal_line
+{
+background: #999999;
+height:37px;
+}
+
+/*nastavuje defaultni vzhled inputu typu button a submit*/
+input[type="button"], input[type="submit"]
+{
+background: #EF9043;
+color: #22252E;
+height: 20px;
+font-weight: bold;
+border-width: 1px;
+border-top-color: #22252E;
+border-left-color: #22252E;
+border-bottom-color: #000000;
+border-right-color: #000000;
+border-style: solid;
+margin-left: 2px;
+margin-right: 2px;
+}
+
+/*nastavuje odlisny vzhled tlacitka odeslat*/
+input[name="send"]
+{
+background: #E20A0A;
+color: #FFFFFF;
+font-weight: bold;
+border-width: 1px;
+border-top-color: #FFFFFF;
+border-left-color: #FFFFFF;
+border-bottom-color: #FFFFFF;
+border-right-color: #FFFFFF;
+margin-left: 2px;
+margin-right: 2px;
+}
+
+
+/*nastavuje defaultni vzhled inputu typu text a password*/
+input[type="text"], input[type="password"]
+{
+background: #4A4B4D;
+color: #EF9043;
+font-weight: bold;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+margin-top:2;
+margin-bottom:2;
+}
+
+/*nastavuje defaultni vzhled pro prvek textarea*/
+textarea
+{
+background: #4A4B4D;
+color: #EF9043;
+font-weight: normal;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek select*/
+select
+{
+background: #4A4B4D;
+color: #EF9043;
+font-weight: bold;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek option*/
+option
+{
+background: #7F8081;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+/*----------------------------------------------------------MAIN_MENU------------------------------------------------*/
+#main_menu
+{
+float:left;
+width:100%;
+background:#22252E url("menu_background.gif") repeat-x bottom;
+line-height:normal;
+}
+
+#main_menu ul
+{
+margin:0;
+padding: 0px 0px 0px 0px;
+list-style:none;
+}
+
+#main_menu li
+{
+float:left;
+background: #22252E url("menu_button.gif") repeat-x bottom;
+border-top: 1px solid #393C45;
+border-right: 1px solid #444A5C;
+border-bottom: 1px solid #000000;
+padding: 2px 2px 2px 2px;
+}
+
+#main_menu li:hover
+{
+background: #EF9043 url("menu_button_hover.gif") repeat-x bottom;
+border-top: 1px solid #FF9F51;
+}
+
+
+#main_menu a
+{
+float:left;
+display:block;
+text-decoration:none;
+font-weight:bold;
+color:#E26906;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+#main_menu a:hover
+{
+color:#22252E;
+}
+
+#main_menu #current
+{
+background: #EF9043 url("menu_button_hover.gif") repeat-x bottom;
+border-top: 1px solid #FF9F51;
+border-bottom: 1px solid #000000;
+}
+
+#main_menu #current a
+{
+//background: #EDF5FD url("menu_button_hover.gif") repeat-x bottom;
+color:#22252E;
+}
+
+#main_menu_bottom
+{
+background:#22252E url("cockpit_background.gif") repeat-x bottom;
+height: 47px;
+}
+
+/*----------------------------------------------------------SUB_MENU------------------------------------------------*/
+#sub_menu
+{
+float:left;
+width:100%;
+background: #22252E;
+line-height:normal;
+}
+
+#sub_menu ul
+{
+margin:0;
+padding:10px 10px 0;
+list-style:none;
+}
+
+#sub_menu li
+{
+float:left;
+}
+
+#sub_menu a
+{
+float:left;
+display:block;
+text-decoration:none;
+font-weight:normal;
+color:#999999;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+#sub_menu a:hover
+{
+color:#EF9043;
+font-weight:normal;
+}
+
+#sub_menu #current a
+{
+color:#EF9043;
+font-weight:bold;
+}
+
+/*----------------------------------------------------------EDITOR------------------------------------------------*/
+.editor
+{
+background: #22252E;
+border: 1px dashed #999;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+.editor_buttons_area
+{
+}
+
+.editor_input_area
+{
+padding: 2px 2px 2px 2px;
+
+}
+
+/*----------------------------------------------------------NAVIGATION------------------------------------------------*/
+.navigation
+{
+background: #22252E;
+margin: 6px 6px 6px 6px;
+padding: 6px 6px 6px 6px;
+}
+
+input[type="submit"]#disabled
+{
+color: #999999;
+}
+
+#navigation_buttons p
+{
+text-align: center;
+}
+
+/*----------------------------------------------------------MESSAGE COUNTER-------------------------------------------*/
+
+#message_counter
+{
+}
+
+
+#message_counter p
+{
+text-align: center;
+}
+
+
+/*----------------------------------------------------------MESSAGE------------------------------------------------*/
+.message
+{
+}
+
+.message_right
+{
+margin:0px 10px 10px 50px;
+padding:5px;
+//border:1px dashed #999;
+}
+
+.message_left
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:5px;
+//border:1px dashed #999;
+line-height:11px;//zajisti umisteni level baru ihned pod ikonku uzivatele
+}
+
+.message_header {
+background:#4A4B4D;
+border-top: 0px solid #A1A6D9;
+border-right: 0px solid #7B81A9;
+border-left: 0px solid #7B81A9;
+border-bottom: 0px solid #7B81A9;
+margin: 0px 0px 0px 0px;
+height:20px;
+}
+
+.message_header_new {
+background:#EF9043;
+color:#22252E;
+border-top: 1px solid #EF9043;
+border-right: 1px solid #EF9043;
+border-left: 1px solid #EF9043;
+border-bottom: 1px solid #EF9043;
+margin: 0px 0px 0px 0px;
+height:20px;
+}
+
+.message_content
+{
+margin-left: 0px;
+padding-top: 5px;
+padding-bottom: 5px;
+//background: #C6E9FD;
+}
+
+.message_action
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.message_content p
+{
+margin-left: 5px;
+margin-top: 0px;
+padding:0px;
+}
+
+
+
+/*---------------------------------------------------------USER ICON-------------------------------------------------*/
+.user_icon
+{
+width: 40px;
+height: 50px;
+}
+
+.level_bar
+{
+width: 40px;
+height: 10px;
+}
+
+/*----------------------------------------------------------NOTICEBOARD------------------------------------------------*/
+#noticeboard
+{
+margin:5px 5px 5px 5px;
+padding:5px 5px 5px 5px;
+border:1px dashed #999;
+}
+
+/*----------------------------------------------------------CONTENT DIVIDER--------------------------------------------*/
+.content_divider {
+background: #C6E9FD;
+}
+
+/*----------------------------------------------------------TOPICS--------------------------------------------*/
+.topic {
+background:#4A4B4D;
+border-top: 0px solid #A1A6D9;
+border-right: 0px solid #7B81A9;
+border-left: 0px solid #7B81A9;
+border-bottom: 0px solid #7B81A9;
+margin: 2px 2px 2px 2px;
+}
+
+.subtopic {
+background:#646669;
+border-top: 0px solid #DEDFE3;
+border-right: 0px solid #B1B6D2;
+border-left: 0px solid #B1B6D2;
+border-bottom: 0px solid #B1B6D2;
+height: 110px;
+margin: 2px 2px 2px 2px;
+}
+
+.discussion {
+background:#646669;
+border-top: 0px solid #6F7CA2;
+border-right: 0px solid #6F7CA2;
+border-left: 0px solid #6F7CA2;
+border-bottom: 0px solid #6F7CA2;
+height: 40px;
+margin: 2px 2px 2px 2px;
+}
+
+/*----------------------------------------------------------BOOKMARKS--------------------------------------------*/
+.bookmark_header {
+background:#4A4B4D;
+border-top: 0px solid #A1A6D9;
+border-right: 0px solid #7B81A9;
+border-left: 0px solid #7B81A9;
+border-bottom: 0px solid #7B81A9;
+margin: 2px 2px 2px 2px;
+height:20px;
+}
+
+.bookmark {
+background:#646669;
+border-top: 0px solid #6F7CA2;
+border-right: 0px solid #6F7CA2;
+border-left: 0px solid #6F7CA2;
+border-bottom: 0px solid #6F7CA2;
+height: 40px;
+margin: 2px 2px 2px 2px;
+}
+
+.bookmark_button {
+float: left;
+margin-right: 10px;
+}
+
+
+/*----------------------------------------------------------SYSTEM_STATISTICS--------------------------------------------*/
+.statistics_header {
+background:#4A4B4D;
+border-top: 0px solid #A1A6D9;
+border-right: 0px solid #7B81A9;
+border-left: 0px solid #7B81A9;
+border-bottom: 0px solid #7B81A9;
+margin: 2px 2px 2px 2px;
+height:20px;
+}
+
+
+/*----------------------------------------------------------SYSTEM_INFORMATION--------------------------------------------*/
+.information_header {
+background:#4A4B4D;
+border-top: 0px solid #A1A6D9;
+border-right: 0px solid #7B81A9;
+border-left: 0px solid #7B81A9;
+border-bottom: 0px solid #7B81A9;
+margin: 2px 2px 2px 2px;
+height:20px;
+}
+
+/*----------------------------------------------------------COCKPIT--------------------------------------------*/
+#cockpit_background {
+}
+
+#cockpit_content {
+height: 80px;
+background:#22252E url("cockpit_background.gif") repeat-x bottom;
+color: #EF9043;
+}
+
+#cockpit_default
+{
+margin:0px 10px 10px 50px;
+padding:5px;
+}
+
+/* floats to cockpit_default from left */
+#cockpit_logged_user 
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:2px;
+line-height:11px;//zajisti umisteni level baru ihned pod ikonku uzivatele
+}
+
+#cockpit_clock
+{
+margin-left: 20px;
+margin-right: 5px;
+float: right;
+}
+
+/*floats to cockpit_default from right*/
+#cockpit_default_right 
+{
+}
+
+#cockpit_list {
+float: right;
+}
+
+#cockpit_content a
+{
+color: #000000;
+}
+
+.updated {
+background: #CFEBF7 url(notice.gif) no-repeat 1em ;
+border: 1px solid #2580B2;
+padding-left: 3em;
+width: 350px;
+}
+
+.updated p {
+color: #000000;
+}
+
+
+
+
+
+/*----------------------------------------------------------FOOTER--------------------------------------------*/
+#footer {
+background:#22252E;
+height:80px;
+}
+
+#footer p
+{
+color: #999999;
+text-align: center;
+}
+
+#footer a
+{
+color: #EF9043;
+text-decoration:none;
+}
+
+/*----------------------------------------------------------USERSLIST--------------------------------------------*/
+.userslist_right
+{
+margin:0px 10px 10px 50px;
+padding:5px;
+//border:1px dashed #999;
+}
+
+.userslist_left
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:5px;
+//border:1px dashed #999;
+line-height:11px;//zajisti umisteni level baru ihned pod ikonku uzivatele
+}
+
+.userslist_header {
+background:#4A4B4D;
+border-top: 1px solid #4A4B4D;
+border-right: 1px solid #4A4B4D;
+border-left: 1px solid #4A4B4D;
+border-bottom: 1px solid #4A4B4D;
+margin: 0px 0px 0px 0px;
+height:20px;
+}
+
+.userslist_content
+{
+margin-left: 0px;
+padding-top: 5px;
+padding-bottom: 5px;
+//background: #C6E9FD;
+}
+
+.userslist_action
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.userslist_content p
+{
+margin-left: 5px;
+margin-top: 0px;
+padding:0px;
+}
+
+/*----------------------------------------------------------SETTINGS--------------------------------------------*/
+.settings {
+margin:2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+border-bottom:1px dashed #999;
+}
+
+/*----------------------------------------------------------NEW DISCUSSION--------------------------------------------*/
+.new_discussion {
+margin:2px 2px 2px 2px;
+padding: 8px 8px 8px 8px;
+border-bottom:1px dashed #999;
+}
+
+/*----------------------------------------------------------USER LOGS--------------------------------------------*/
+.user_logs {
+margin:2px 2px 2px 2px;
+padding: 8px 8px 8px 8px;
+border-bottom:1px dashed #999;
+}
+
+
+
+
+
+
+
+
+

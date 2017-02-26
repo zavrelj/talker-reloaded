@@ -1,0 +1,10 @@
+1) Stáhnout soubor G3N.US_ddmmyy.zip, kde dd je den, mm je mìsíc a yy je rok
+2) Rozbalit, vznikne stejnojmenná sloka obsahující dva adesáøe, 4upload a src
+3) Pøipravíme si pøístupové údaje k databázi MySQL: adresu databáze, jméno databáze, jméno uivatele a heslo uivatele
+4) Tyto údaje zapíšeme do souboru db.inc.php, kterı nalezneme v adresáøi 4upload
+5) V adresáøi src vyhledáme soubor g3nus_blank_db_ddmmyy.sql a naimportujeme ho do databáze MySQL, napø. pomocí phpMyAdmina
+6) Obsah adresáøe 4upload nahrajeme do rootu na svém webhostingu (zpravidla adresáø html, web nebo httpdocs), pozor pouze
+obsah tohoto adresáøe, nikoliv celı adresáø!
+7) Nastavíme pro adresáø ico na serveru pøístupová práva na 777
+8) Zadáme do prohlíeèe adresu naší domény, mìla by se objevit úvodní stránka diskuzního serveru
+9) Klikneme na odkaz registrace a vytvoøíme prvního uivatele (napø. admin). Poté se tímto jménem pøihlásíme na úvodní stránce do systému

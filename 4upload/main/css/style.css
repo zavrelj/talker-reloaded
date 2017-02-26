@@ -1,0 +1,163 @@
+body
+{
+background: #22252E;
+color: #EF9043;
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+}
+
+/*nastavuje vsem prvkum defaultni text*/
+*
+{
+font-family: Trebuchet MS, Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+font-size: 98%;
+}
+
+h1
+{
+font-size: 200%;
+}
+
+h2
+{
+font-size: 150%;
+}
+
+h3
+{
+font-size: 125%;
+}
+
+/*text pro upozorneni, zvolen napr. u poctu novych prispevku v diskuzich*/
+.alert
+{
+color: #FF5151;
+}
+
+/*nastavuje defaultni styl vsem odkazum*/
+a
+{
+font-weight: normal;
+text-decoration: underlined;
+}
+
+/*nastavuje defaultni styl vsem obrazkum*/
+img
+{
+border-width: 0px;
+}
+
+
+#horizontal_line
+{
+background: #7B81A9;
+height:37px;
+}
+
+/*nastavuje defaultni vzhled inputu typu button a submit*/
+input[type="button"], input[type="submit"]
+{
+background: #3F4471;
+color: #FFFFFF;
+height: 20px;
+font-weight: bold;
+border-width: 1px;
+border-top-color: #9EA3D5;
+border-left-color: #9EA3D5;
+border-bottom-color: #000000;
+border-right-color: #000000;
+border-style: solid;
+margin-left: 2px;
+margin-right: 2px;
+}
+
+/*nastavuje defaultni vzhled inputu typu text a password*/
+input[type="text"], input[type="password"]
+{
+background: #FFFFFF;
+color: #000000;
+font-weight: bold;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+margin-top:2;
+margin-bottom:2;
+}
+
+/*nastavuje defaultni vzhled pro prvek textarea*/
+textarea
+{
+background: #FFFFFF;
+color: #000000;
+font-weight: bold;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek select*/
+select
+{
+background: #FFFFFF;
+color: #000000;
+font-weight: bold;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek option*/
+option
+{
+background: #7F8081;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+
+/*----------------------------------------------------------HEADER--------------------------------------------*/
+#header {
+margin: 2px 2px 2px 2px;
+}
+
+#header p
+{
+color: #999999;
+text-align: left;
+}
+
+#header a
+{
+color: #333399;
+text-decoration:none;
+}
+
+/*----------------------------------------------------------CONTENT--------------------------------------------*/
+#content {
+width:400px;
+}
+
+#content p
+{
+color: #999999;
+text-align: justify;
+}
+
+/*----------------------------------------------------------FOOTER--------------------------------------------*/
+#footer {
+height:80px;
+}
+
+#footer p
+{
+color: #999999;
+text-align: left;
+}
+
+#footer a
+{
+color: #333399;
+text-decoration:none;
+}

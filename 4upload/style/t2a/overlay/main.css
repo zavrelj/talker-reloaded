@@ -1,0 +1,3570 @@
+/*
+-----------------------------------------------
+Title:  CAPs master styles for screen media
+Author: TMF Creative Services Group
+Updated: April 19 2007
+----------------------------------------------- */
+/* -- [ Body ] --------------------------------------------*/
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	background:#7e8eb1 url("http://g.fool.com/art/ratings/070328_bg.jpg");
+	text-align:center; 
+	font-family:arial, sans-serif; 
+	color:#000;
+	font-size:100%;
+}
+#capsWrapper,
+.capsWrapper {
+	text-align:left;
+}
+/* -- [ Color Schemes ] --------------------------------------------*/
+div.themeOne,
+div.themeTwo,
+div.themeThree,
+div.themeFour,
+div.themeFive {
+	padding:2px;
+	margin-bottom:1em;
+}
+/* light blue */
+.themeOne {
+	border:1px solid #D3DAE4;
+	background:#F4F7FB;
+}
+/* medium orange */
+.themeTwo {
+	border:1px solid #f9e2ad;
+	background:#fcf4e4;
+}
+/* winning green */
+.themeThree {
+	border:1px solid #DBEAFB;
+	background:#fff;
+}
+/* losing red */
+.themeFour {
+	border:1px solid #DBEAFB;
+	background:#fff;
+}	
+/* purple */
+.themeFive {
+	border:1px solid #E3D7E1;
+	background:#e7d9e5 url("http://g.fool.com/art/ratings/newTickerRating_bg3.gif") repeat-x top left;
+}	
+div.themeOne .innerDiv,
+div.themeTwo .innerDiv,
+div.themeThree .innerDiv,
+div.themeFour .innerDiv,
+div.themeFive .innerDiv {
+	padding:.6em;
+	text-align:left;
+}
+#topDog {
+	position:relative;
+}
+#topDog h2 {
+	padding-left:18px;
+}
+#topDog .themeFive {
+	background-image:none;
+	background-color:#fff;
+}
+#topDog .themeFive .innerDiv {
+	padding:2px;
+	padding-left:0;
+}
+#topDog img.avatar {
+	width:52px;
+	display:block;
+	float:left;
+	border:none;
+}
+#topDog ul {
+	margin-left:56px;
+}
+#topDog ul li {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	font:.6em arial,sans-serif;
+	line-height:1.5em;
+}
+html>body #topDog ul li {
+	line-height:1.3em;
+}
+#topDog p {
+	clear:both;
+	padding:.5em;
+}
+.scoreLeaderCharm{
+	width:12px; 
+	height:16px; 
+	position:absolute; 
+	top:1px;
+	left:6px;
+	z-index:10;
+}
+/* -- [ Links ] --------------------------------------------*/
+a:link,
+a:visited {
+	color:#4C91E6;
+}
+a:hover {
+	color:#036;
+}
+/* -- [ Headings ] --------------------------------------------*/
+h1 {
+	margin-bottom:.5em;
+	font:bold 1.4em georgia,serif;
+	color:#e18c05;
+}
+#ticker h1 {
+	margin-bottom:.1em;	
+}
+h2 {
+	font:bold .7em arial,sans-serif;
+	text-transform:uppercase;
+	padding:.2em .2em .2em .5em;
+	position:relative;
+	z-index:1;	
+}
+.themeOne h2 {
+	background:#b9c4dc url("http://g.fool.com/art/ratings/h2v2.jpg") repeat-x;
+	color:#343f55;
+	border-bottom:1px solid #93a7ca;		
+}
+
+
+.themeTwo h2 {
+	background:#f8ca62 url("http://g.fool.com/art/ratings/h2v1.jpg") repeat-x;
+	color:#C77905;
+	border-bottom:1px solid #ebb435;
+}
+.themeThree h2 {
+	background:#CA2400 url(http://g.fool.com/art/ratings/h3_red_bg.gif) top repeat-x;
+	color:#fff;
+	border-bottom:1px solid #A81E00;
+}
+.themeFour h2 {
+	background:#62ac12 url(http://g.fool.com/art/ratings/h3_green_bg.gif) top repeat-x;
+	color:#fff;
+	border-bottom:1px solid #4E870E;
+}
+.themeFive h2 {
+	background:#8C4980 url(http://g.fool.com/art/ratings/h3_purple_bg.gif) top repeat-x;
+	color:#fff;
+	border-bottom:1px solid #8f44c4;
+}
+h3 {
+	font-size:.7em;
+	color:#333;
+}
+
+/* -- [ Ads ] --------------------------------------------*/
+#leaderBoard {
+	background:#fff; 
+	padding:.2em 0 1em 0;
+	border-bottom:1px solid #e4e4e4;
+}
+#leaderBoard *,
+#skyScraper * {
+	margin:0 auto;
+	text-align:center;
+}
+#adDbcFooter {
+	text-align:center;
+	margin:1em;
+	clear:both;	
+}
+#adDbcFooter div {
+	margin:.3em auto 1em auto;
+}
+#adDbcFooter div div {
+	margin:.5em 1em;
+	position:relative;
+	float:left;
+	font:bold .7em arial,sans-serif;
+	width:100px;
+}
+#adDbcFooter h2 {
+	text-align:left;
+}
+/* -- [ Forms ] --------------------------------------------*/
+input, select, textarea { 
+	font:normal arial, sans-serif;
+	color:#333;
+}
+textarea {
+	font-size:11px;	
+}
+#mainContent select { 
+	font-size:.8em;
+}
+legend {
+	display:none;
+}
+fieldset {
+	border:none;
+}
+#txtComment {
+	margin-bottom:.7em;
+}
+.buttonContainer {
+	text-align:center;
+	margin:.1em auto .1em auto;
+}
+body#addPitch .buttonContainer {
+	margin:.1em 0 .5em 0;
+}
+.button p {
+	font:bold .7em arial,sans-serif;
+	padding-top:.2em;
+}
+input {
+	font-size:11px;
+}
+input.button,
+.button,
+input.buttonEdit {
+	background:#e9e9e9 url("http://g.fool.com/art/ratings/button_bg_grey.gif") repeat-x top left;
+	color:#333;
+	border:1px solid #d8d8d8;
+	border-color:#d8d8d8 #999 #999 #d8d8d8;
+	font:bold 10px arial, sans-serif;
+	margin:0 0 .3em .3em;
+	cursor:pointer;
+}
+input.buttonOver,
+.buttonOver,
+input.buttonEditOver,
+.buttonEditOver,
+input.button:hover,
+.button:hover,
+input.buttonEdit:hover,
+.buttonEdit:hover {
+	background:#e0e0e0;
+	color:#000;
+	border:1px solid #d8d8d8;
+	border-color:#d8d8d8 #999 #999 #d8d8d8;
+	font:bold 10px arial, sans-serif;
+	cursor:pointer;
+	position:relative;
+	margin:0 0 .3em .3em;	
+	top:0;
+	left:1px;
+
+}
+p.paginationTop input.button,
+p.paginationBottom input.button {
+	padding:0;
+	margin:0 0 .1em .3em;
+	font:normal 9px arial,sans-serif;
+
+}
+#tickerRating .button,
+#tickerRating .buttonOver {
+	margin-bottom:10px;
+	padding:2px;
+}
+html>body input.button,
+html>body input.buttonOver,
+html>body input.buttonEdit,
+html>body input.buttonEditOver { /* Mozilla Padding */
+	padding:0.25em .35em;
+}
+input.button,
+input.buttonOver { /* IE Padding */
+	padding:0;
+}
+#topDog input.button,
+#topDog input.buttonOver {
+	width:110px;
+}
+body#preferences input.button {
+	margin-right:.7em;
+	margin-bottom:.7em
+}
+/* -- [ Misc. ] --------------------------------------------*/
+#skipnav { 
+	display:none; 
+}
+/* Images */
+img { 
+	border:0; 
+}
+.chartImageRating {
+	background:#fff url("http://g.fool.com/art/ratings/icon_loading.gif") no-repeat center center;
+	height:147px;
+	width:auto;
+	margin:auto;
+	background:#fff;
+	border:1px solid #D3DAE4;
+	border-bottom:none;
+	text-align:center;
+	padding:.5em;
+}
+/* Type Treatments */
+em.highlight {
+	font-style:normal;
+	background-color:#fffcb0;
+	border:none;
+}
+/* Clear Floats */
+.clear {
+	clear:both;
+	height:1px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+/* Clearfix Patch, updated for IE7 on 7/26/06 */
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	display:inline-block;
+}
+.clearfix {
+	display:block;
+}
+* html .clearfix {
+	height:1px;
+}
+/* -- [ Containers ] --------------------------------------------*/
+#pagebody {
+	padding:2px 0 0 0;
+	border-bottom:1px solid #eee;
+	position:relative;
+	background:#fff;
+}
+/* -- [ Top Hat ] --------------------------------------------*/
+#topHatWrap {
+	color:#666;
+	font-size:.6em;
+	border-bottom:1px solid #4F6EA1; 
+	background:#f7f7f7 url("http://g.fool.com/art/ratings/tophat_bg.gif") repeat-x top left;
+}
+#topHat {
+	margin:0 auto;
+	padding:.8em;
+	width:92em;
+}
+#topHat #greeting {
+	float:left;
+	text-align:left;
+}
+#topHat #foolNav {
+	float:right;
+	text-align:right;
+}
+/* -- [ Header ] --------------------------------------------*/
+#header {
+	margin:0 auto 0 auto;
+	padding:0 0 .3em 0;
+	height:5em;
+	background:#e2e8f3;
+	text-align:left;
+	position:relative;
+}
+#logo {
+	width:407px;
+	height:77px;
+	position:absolute;
+	display:block;
+	top:.3em;
+	left:.5em;
+	z-index:1;
+}
+/* Search Box */
+.highlight{
+	background:#fff;
+	border:1px solid #aaa;
+	font:1.2em arial, sans-serif;
+	}
+#search { 
+	margin:0 auto 0 auto;
+	padding:5px;
+	font:.8em arial, sans-serif;
+	text-align:right;
+	border-top:2px solid #bcc1ca;
+	border-bottom:1px solid #bbc5d6;
+	background:#e1e7f2;
+}
+#search p {
+	margin:0;
+	line-height:0;
+	display:inline;
+	padding:2px;
+	font:.8em arial, sans-serif;
+}
+#search input.text {
+	margin:0 6px 0 0;
+	width:100px;
+	border:1px solid #aaa;
+	background:#ffe;
+	font:1.2em arial, sans-serif;
+}
+#search input { /* IE Spacing */
+	margin:0 0 -2px 0;
+}
+html>body #search input { /* Mozilla Spacing */
+	margin:0 2px -2px 0;
+}
+#search label {
+	margin:0 9px 0 0;
+	padding-top:0;
+}
+#search label,
+#search strong {
+	color:#474747;
+}
+#search #spValueChange {
+	padding-left:13px;
+	text-transform:uppercase;
+	font-size:1em;
+	background:transparent url("http://g.fool.com/art/ratings/bullet_arrow.gif") no-repeat 0 51%;
+}
+#search #spValueChange .up {
+	color:#62ac12;
+}
+#sandp {
+	width:20em;
+	position:relative;
+	float:left;
+	text-align:left;
+}
+/* S&P numbers */
+#sandp ul {
+	padding-top:3px;
+	list-style-type:none;
+	font-size:.8em;
+}
+#sandp ul li {
+	display:inline;
+	color:#666;
+	padding-left:3px;
+}
+/* -- [ Main Navigation ] --------------------------------------------*/
+#mainNav ul#navlist {
+	margin:0 auto;
+	text-align:left;
+	padding:0;
+	background:#8CA5CD url("http://g.fool.com/art/ratings/nav_bg.jpg") repeat-x;
+	border-top:1px solid #3D5C95;
+	border-bottom:1px solid #3D5C95;		
+}
+#mainNav li {
+	float:left;
+	list-style-type:none;
+}
+#mainNav li a { 
+	padding:.2em .8em .3em .8em;
+	border-right:1px solid #87accd;
+	text-decoration:none; 
+	color:#fff;
+	display:block;
+	font:.7em tahoma,verdana,arial,sans-serif;
+}
+#mainNav li a:hover,
+#mainNav li.active a{
+	background:#4D6CA3 url("http://g.fool.com/art/ratings/nav_bg_hover.jpg") repeat-x;
+	color:#fff;
+}
+#mainNav li a span {
+	text-transform:none;
+	font-weight:bold;
+}
+/* -- [ Main Content ] --------------------------------------------*/
+#capsWrapper {
+	margin:0 auto 3em auto;
+	padding:0;
+	background:#fff;
+	width:62em;
+	text-align:left;
+	position:relative;
+	border-top:none;
+}
+#mainContent {
+	width:48em;
+	float:left;
+	border-right:1px solid #e9eef3;
+	padding:.6em 1em .5em 0;
+	border-right:1px solid #eee;
+	margin-left:.5em;
+}
+html>body #mainContent {
+	margin-left:1em;
+}
+#mainContent p {
+	margin-bottom:1.2em;
+	line-height:1.5em;
+	font-size:.7em;
+}
+/* for IE */
+.leftColumn {
+	width:23.5em;
+	margin:0;
+	position:relative;
+	float:left;
+	z-index:2;
+}
+.rightColumn {
+	width:23.5em;
+	float:right;
+	z-index:1;
+}
+/* -- [ Modules ] --------------------------------------------*/
+#mainTopPromo {
+	height:14em;
+}
+#mainTopPromo div#divTP1,
+#mainTopPromo div#divTP2, 
+#mainTopPromo div#divTP3, 
+#mainTopPromo div#divTP4 {
+	margin:.5em;
+	padding:0;
+	overflow:hidden;
+}
+#atAGlance,
+#blogRoll {
+	margin-bottom:1em;	
+}
+#atAGlance div#divAAGOne,
+#atAGlance div#divAAGTwo, 
+#atAGlance div#divAAGThree, 
+#atAGlance div#divAAGFour,
+#blogRoll div#divBROne {
+	overflow:hidden;
+}
+.quarterBoxLeft {
+	width:11em; 
+
+	position:relative;
+	float:left;
+	height:14em;
+}
+.quarterBoxRight {
+	margin-left:12em;
+	height:14em;	
+}
+.quarterBoxRight div,
+.quarterBoxLeft div {
+	margin:2px;
+}
+.quarterBoxRight table td,
+.quarterBoxLeft table td,
+.quarterBoxRight table th,
+.quarterBoxLeft table th {
+	padding:0px;
+	border:none;
+}
+.quarterBoxRight table th,
+.quarterBoxLeft table th {
+	padding:2px 6px;
+	font:bold 10px arial,sans-serif;
+	text-align:center;
+}
+#sideBar {
+	padding:1em 1em 0 0;
+	margin:-9px 0 0 0;
+	width:10em; 
+	float:right; 
+	color:#353535;
+}
+#sideBar table {
+	width:100%;
+}
+#sideBar table td {
+	font:.7em arial, sans-serif;
+	padding:.2em;
+}
+#sideBar table td.left {
+	width:3.5em;
+}
+#sideBar table td.center {
+	text-align:left;
+}
+.alignRight {
+	padding:.3em 0 0 .6em;
+	text-align:right;
+	font-size:.7em;
+	float:right;
+}
+/* Scorcard and Commentary views navigation */
+.stockPicksNav label {
+	padding:0;
+	font-size:.7em;
+	font-style:normal;
+	position:relative;
+	float:left;
+	margin:0 .4em 0 0;
+}
+.stockPicksNav {
+	position:relative;
+	margin-bottom:1em;
+}
+
+p.paginationBottom,
+p.paginationTop {
+	font-size:11px;
+}
+p.pagination {
+	padding:0;
+	margin:0;	
+	float:left;
+	width:32em;
+}
+#tickerRankings p.pagination,
+#playerRankings p.pagination {
+	width:42em;	
+}
+p.pagination a,
+p.paginationTop a,
+p.paginationBottom a	 {
+	padding-right:.3em;
+	font-weight:normal;
+	
+}
+p.paginationTop {
+	float:none;
+	width:auto;
+}
+p.paginationBottom {
+	padding-top:.5em;
+}
+p.viewPrefs {
+	padding:0;
+	margin:0;	
+	float:right;
+	width:25em;
+	text-align:right;	
+}
+p.showPitches {
+	padding:0;
+	margin:0;		
+	float:right;
+}
+ul.sortLinks li {
+	list-style-type:none;
+	float:left;
+	font-size:.7em;
+}
+ul.sortLinks li {
+	padding-right:6px;
+}
+.picksContainer p.pagination,
+.picksContainer p.paginationBottom {
+	padding-left:.5em;
+}
+/* Scorecard table */
+table.picksDataView {
+	font-size:.7em;
+	width:100%;
+	border-top:1px solid #e8ebec;
+	border-left:1px solid #e8ebec;
+	clear:both;
+	background:#fff;
+}
+table.picksDataView td,
+table.picksDataView th {
+	padding:2px;
+	vertical-align:top;
+	border-right:1px solid #e8ebec;
+	border-bottom:1px solid #e8ebec;
+}
+table.picksDataView th { 
+	background-color:#f5f5f5;
+}
+table.picksDataView td.right,
+table.picksDataView th.right {
+	text-align:right;
+}
+table.picksDataView td span.tableStrike {
+	display:block;
+}
+/* Scorcard Pitch Display */
+.firstPitchHeader {
+	background:#ffeccc;
+	border:1px solid #ffeccc;
+	padding:.3em;
+	padding-right:0;
+}
+.replyPitchHeader {
+	background:#fff3df;
+	border:1px solid #ffeccc;
+	border-bottom:1px dashed #ffeccc;
+}
+.pitchLinks {
+	text-align:right;
+	margin-left:55%;
+	padding:.2em;
+}
+.firstTitle,
+.replyTitle {
+	position:relative;
+	float:left;
+	width:50%;
+	padding:.2em;
+}
+.replyTitle {
+	padding-left:1.2em;
+}
+.replyTitle img {
+	display:inline;
+	padding-right:3px;
+}
+.firstPitch,
+.replyPitch {
+	padding:.5em 2.5em;
+	padding-bottom:3em;
+}
+.firstPitch {
+	padding-left:1em;
+	background:#fff8ec;
+	font-size:1em;
+}
+.replyPitch {
+	padding-left:2.5em;
+	font-size:1em;
+}
+/* Commentary table */
+table.picksCommentView {
+	border-top:none;
+	width:100%;
+	clear:both;
+	position:relative;
+}
+table.picksCommentView td { 
+	padding:0;
+	text-align:left; 
+	vertical-align:middle;
+}
+table.picksCommentView td.header {
+	background:#cce0f8;
+	padding:0;
+	vertical-align:middle;
+}
+table.picksCommentView td.header ul {
+	list-style-type:none;
+	margin:0;
+	padding-top:.3em;
+	position:relative;
+	float:left;
+}
+table.picksCommentView td.header ul li {
+	display:inline;
+	padding:0 .5em 0 .5em;
+	border-right:1px solid #fff;
+}
+table.picksCommentView td.header ul li img {
+	padding:0;
+	margin:0;
+}
+table.picksCommentView td.right {
+	text-align:right;
+}
+table.picksCommentView th { 
+	font-size:1.4em;
+	text-align:left;
+	padding:0;
+}
+td.pitchToggle {
+	padding:4px;
+	width:28px;
+	text-align:center;
+	background:#b7d3f5;
+}
+td.pitchToggle img {
+	width:31px;
+	height:20px;
+	border:0;
+	display:block;
+	margin:0 auto;
+}
+.avatar img {
+	width:46px;
+	height:46px;
+	background-color:#fff;
+	padding:4px;
+	border:4px solid #F3CF71;
+}
+/* Picks Contest View */
+.picksContestView {
+	margin-bottom:1.2em;
+	background-color:#F4F7FB;
+	color:#000;
+	position:relative;  /* IE6 Peekaboo Bug */
+}
+/* Hide partner ad on contest view */
+#divContestStockPicks .alignRight {
+	display:none;
+}
+
+/* Prevents showing of contest display on initial page load in FireFox */
+.picksContestView .content { 
+	padding-top:1em;
+}
+.picksContestView h2 {
+	margin:0;
+	padding:.3em 0 0 .4em;
+	font-size:.9em;
+	float:left;
+}
+p.contestSelector {
+	margin:0;
+	padding-right:.4em;
+	float:right;
+}
+.picksContestView div.picksContainer {
+	padding:0;
+}
+table.contestStats {
+	background-color :#fff;
+	border:1px solid #d2d9db;
+	border-collapse:collapse;
+	margin-bottom:1.5em;
+}
+table.contestStats td { 
+	padding:.4em;
+	border:1px solid #d2d9db;
+	font-size:.7em;
+	vertical-align:middle;
+}
+.picksContestView table.picksDataView {
+	position:relative; /* fixes <td> layout problem in IE */
+}
+/* -- [ Bull/Bear Module ] --------------------------------------------*/
+#bullBearContainer{
+	position:relative;
+}	
+#bullBearContainer .pitchBody{
+	clear:none
+}
+.prop {
+	height:15em;
+	float:left;
+}
+#mainContent #pShowPitches{
+	float:right;
+	margin-bottom:3px;
+	margin-top:-19px;
+}
+#topBullPitch, 
+#topBullPitchNoData{
+	width:23.1em; 
+	background:#fff url("http://g.fool.com/art/ratings/greenThumbBkg2.gif") bottom right no-repeat; 
+	float:left;
+	margin-right:1em;
+}
+#topBearPitch, 
+#topBearPitchNoData{
+	width:23.1em; 
+	background:#fff url("http://g.fool.com/art/ratings/redThumbBkg.gif") bottom right no-repeat; 
+	float:left;
+}
+#topBullPitch .pitchBody .initialPitch img, 
+#topBearPitch .pitchBody .initialPitch img {
+	margin-right:2px;
+}
+#bullBearContainer .dtreviewed {
+	display:block;
+	margin-top:-8px;
+	margin-left:30px;
+}
+.pitchContextMenu{
+	margin:15px 15px 0 0;
+}
+#topBullPitch .topBullHeader .title, #topBearPitch .topBearHeader .title{
+	margin-bottom:2px;
+}
+.fullPitch{
+	text-decoration:none; 
+	font-size:.9em;
+}
+#topBullPitch h3, #topBearPitch h3{
+	font-size:1.5em;
+	padding:0;
+	margin:0;
+}
+#topBullPitch .recWrap p, #topBearPitch .recWrap p{
+	padding:6px 0;
+	margin:0 !important;
+}
+.bullBearNoData{
+	font-size:1.1em !Important;
+	width:11em;
+	text-align:center;
+	margin:3em auto;
+	color:#000;
+	height:117px;
+}
+#bullBearContainer .dtreviewed{
+	display:block;
+	margin-top:-8px;
+	margin-left:30px;
+}
+/* -- [ Global Modules (Carousels and Stats) ] --------------------------------------------*/
+#mainContent .tabbedNav {
+	position:relative;
+}
+/* Carousels */
+#mainContent .tabbedNav li {
+	margin-right:.3em;
+	position:relative;
+	float:left;
+	border:1px solid #d2d9db;
+	border-bottom:none;
+	list-style-type:none;
+	padding-bottom:0;
+	background:#F4F7FB url("http://g.fool.com/art/ratings/tabbedNavCurrent.gif") repeat-x !important;
+}
+#mainContent .tabbedNav a {
+	padding:.2em 1em .3em 1em;
+	display:block;
+	font:bold .6em arial,sans-serif;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#000;
+}
+#mainContent .tabbedNav li.active a:link,
+#mainContent .tabbedNav li.active a:visited {
+	background:#fff;
+	color:#4c91e6;
+}
+#mainContent .tabbedNav li.active a:hover {
+	color:#c30;
+}
+/* Stock Carousel */
+#bullSlideshow,
+#bearSlideshow,
+#mainStreetSlideshow,
+#wallStreetSlideshow {
+	height:10em;
+	position:relative;
+	overflow:hidden;
+	margin:0;
+	background:#F4F7FB;
+}
+#bullPreview,
+#bearPreview,
+#mainStreetPreview,
+#wallStreetPreview {
+	position:absolute;
+	top:0em;
+	left:0em;
+	width:200em;
+	background:#fff;
+}
+ul#bullLinklist,
+ul#bearLinklist,
+ul#mainStreetPlayerLinklist,
+ul#wallStreetPlayerLinklist {
+	list-style-type:none;
+	font:bold .7em arial;
+	color:#5a85a5;
+	margin:0;
+	padding:.2em 0 0 0;
+	background:#F4F7FB;
+	text-align:center;
+	background-image:none;
+	height:2.2em;
+}
+/* patch to get prev/next buttons to line up */
+img.valign {
+	vertical-align:middle;
+}
+td.valign {
+	vertical-align:top;
+}
+ul#bullLinklist img,
+ul#bearLinklist img,
+ul#mainStreetPlayerLinklist img,
+ul#wallStreetPlayerLinklist img {
+	padding:.3em .2em .3em .2em;
+}
+ul#bullLinklist li,
+ul#bearLinklist li,
+ul#mainStreetPlayerLinklist li,
+ul#wallStreetPlayerLinklist li {
+	display:inline;
+	background-image:none;
+}
+ul#bullLinklist li img,
+ul#bearLinklist li img,
+ul#mainStreetPlayerLinklist li img,
+ul#wallStreetPlayerLinklist li img {
+	border:none;
+}
+.imageHolder {
+	width:7.2em;
+	float:left;
+	padding:.3em 0;
+	margin:.3em;
+	text-align:center;
+	background:#fff;
+	border:1px solid #d2d9db;
+}
+html>body .imageHolder {
+	margin:.3em .36em;
+}
+.imageHolder a.avatarLnk {
+	display:block;
+	width:58px;
+	margin:0 auto;
+}
+.imageHolder img {
+	margin:0 auto;
+	border:6px solid #f9e5b2;
+}
+.imageHolder p {
+	margin-top:.2em;
+	font:.9em verdana,sans-serif;
+	color:#666;
+	line-height:1.2em;
+}
+table.tblCarousel {
+	width:20.8em;
+	background-color:#fff;
+	height:10em;
+	position:relative;
+	float:left;
+}
+table.tblCarousel th {
+	background:#F4F7FB;
+	font:bold .7em arial,sans-serif;
+	vertical-align:middle;
+	padding:.4em .4em .4em .5em;
+	color:#003372;
+	border:none;
+}
+table.tblCarousel th img {
+	padding:.2em 0;
+}
+table.tblCarousel th {
+	padding:.6em .4em .5em .5em;
+}
+table.tblCarousel th .left {
+	text-align:left;
+	display:block;
+	position:relative;
+	float:left;
+	width:60%;
+}
+table.tblCarousel th .right {
+	text-align:right;
+	display:block;
+}
+table.tblCarousel td {
+	padding:.4em .4em .4em .5em;
+	border-bottom:1px solid #F4F7FB;
+	font:.7em arial,sans-serif;
+	vertical-align:middle;
+}
+table.tblCarousel h3 {
+	font-size:1.1em;
+	color:#666;
+}
+table.tblCarousel td.left {
+	width:100px;
+	text-align:center;
+	padding:6px;
+	border-right:1px solid #F4F7FB;
+	vertical-align:middle;
+	height:auto;
+}
+table.tblCarousel td.left img.smiley {
+	display:block;
+	margin:6px auto 2px auto;
+	width:36px;
+	height:36px;
+	border:none;
+}
+table.tblCarousel td.left .avatar img {
+	border:4px solid #e8ebec;
+	margin:0 auto;
+}
+table.tblCarousel td.left .avatar {
+	display:block;
+}
+/* target tags listing in Stock Spotlight */
+table.tblCarousel td p a  {
+	font-size:1.4em;
+}
+/* Stats tables */
+#tickerRating,
+#tickerInfo {
+	margin-bottom:0;
+	text-align:center;
+	position:relative;
+}
+#tickerInfo {
+	position:static;
+}
+
+#tickerRating .ratingButton {
+	text-align:center;
+	margin:0 auto 1em auto;
+}
+#tickerRating .ratingButtonOver {
+	text-align:center;
+	margin:0 auto 1em auto;
+}
+.secondaryTable {
+	width:100%;
+	border:1px solid #d2d9db;
+	border-collapse:collapse;
+	border-top: 1px solid #d2d9db;
+	border-left: 1px solid #d2d9db;
+}
+.tabsContents .secondaryTable, .virtualPlayerBG .secondaryTable {
+	width:100%;
+	border:none;
+	border-collapse:inherit;
+}
+.secondaryTable th {
+	font:bold .7em arial,sans-serif;
+	vertical-align:middle;
+	padding:.5em;
+	border:none;
+	background:#F4F7FB;
+	text-align:left;
+}
+.secondaryTable td {
+	font:.7em arial,sans-serif;
+	padding:.4em;
+	border:1px solid #d2d9db;
+}
+.secondaryTable td,
+.secondaryTable th { 
+	border-bottom: 1px solid #d2d9db;
+	border-right: 1px solid #d2d9db;
+}
+.tabsContents .secondaryTable td, .virtualPlayerBG .secondaryTable td{
+	font:.7em arial,sans-serif;
+	padding:.5em;
+	border:none;
+}
+.tabsContents .secondaryTable td.left, 
+.tabsContents div.left, 
+.virtualPlayerBG .secondaryTable td.left, 
+.virtualPlayerBG div.left{
+	height:147px;
+	width:10em;
+	text-align:center;
+	font-weight:bold;
+	background:#fff;
+	border:1px solid #d2d9db;
+}
+html>body .tabsContents .secondaryTable td.left,
+html>body .virtualPlayerBG .secondaryTable td.left,
+html>body .tabsContents div.left 
+html>body .virtualPlayerBG div.left{
+	width:9em;
+}
+.tabsContents div.left,
+.virtualPlayerBG div.left{
+	position:relative;
+	float:left;
+	height:100px;
+	font-size:.7em;
+}
+.tabsContents div.left img.avatar,
+.virtualPlayerBG div.left img.avatar{
+	display:block;
+	border:1px solid #d2d9db;
+	margin:1em auto .3em auto;
+}
+.tabsContents div.right{
+	margin-left:11.5em;
+	padding-right:20px;
+	font-size:.7em;
+	width:14em;
+	border-right:1px solid #d2d9db;
+}
+.virtualPlayerBG div.right {
+	margin-left:11.5em;
+	font-size:.7em;
+	margin-right:3em;
+	width:43em;
+}
+.tabsContents table.movers,
+.virtualPlayerBG table.movers {
+	border-collapse:collapse;
+}
+.tabsContents table.movers th,
+.virtualPlayerBG table.movers th{
+	border:none;
+	padding:0 0 .3em 0;
+	background:transparent;
+	color:#666;
+	font-size:1em;
+}
+.tabsContents table.movers td,
+.virtualPlayerBG table.movers td{
+	border:1px solid #d2d9db;
+	background:#f8fafc;
+	background:#fff;	
+	padding:.3em;
+}
+.secondaryTable td.left img {
+	display:block;
+	text-align:center;
+	margin:.3em auto;
+}
+.secondaryTable th span.left {
+	display:block;
+	float:left;
+}
+.secondaryTable th span.right {
+	display:block;
+	text-align:right;
+}
+.secondaryTable td.yourStatsLeft {
+	text-align:center;
+	width:100px;
+	font-weight:bold;
+	border-right:1px solid #F4F7FB;
+	background:#fff;
+}
+.secondaryTable td.yourStatsLeft img {
+	display:block;
+	text-align:center;
+	margin:.5em auto 0 auto;
+}
+.secondaryTable td.chart {
+	text-align:center;
+}
+.secondaryTable td.chart img {
+	margin:0 auto;
+}
+th.yourStatsWinning {
+	background:#a8dd6e url("http://g.fool.com/art/ratings/statsWinning.gif") repeat-x top left;	
+	color:#000;	
+}
+th.yourStatsLosing {
+	background:#ed7f67 url("http://g.fool.com/art/ratings/statsLosing.gif") repeat-x top left;	
+	color:#000;
+}
+th.yourStatsTied {
+	background:#babecf url("http://g.fool.com/art/ratings/statsEven.gif") repeat-x top left;	
+	color:#000;
+}
+.contestWrapper .secondaryTable td.left {
+	text-align:center;
+	font-weight:bold;
+}
+.moreData {
+ background:#fff;
+ padding:.5em;
+ text-align:center;
+ border:1px solid #D3DAE4;
+ border-top:none;	
+}
+.moreData p {
+	font:.7em arial,sans-serif;
+}
+
+.genericBox {
+	border:1px solid #D3DAE4;
+	padding:.5em .5em .2em .5em;
+	background:#fff;
+}
+.genericTable {
+	width:100%;
+}
+.genericTable th{
+	font-weight:bold;
+}
+.genericTable td, .genericTable th{
+	font-size:.7em;
+	padding-right:.3em;
+	text-align:left;
+}
+.genericTable td {
+	border-top:1px solid #d2d9db;
+	vertical-align:middle;
+	padding:.4em .4em .4em 0;
+}
+.genericTable .dataTableFooter {
+	color:#666;
+	text-align:right;
+	padding-top:.5em;
+}
+table.tickerStats {
+	width:100%;
+	background:#fff;
+}
+table.tickerStats th {
+	background:#F4F7FB;
+	font:bold .7em arial,sans-serif;
+	vertical-align:middle;
+	padding:.5em;
+	color:#013274;
+	border:none;
+}
+.tableWrapper table th.left {
+	text-align:center;
+	width:30%;
+}
+.tableWrapper table th.right {
+	text-align:right;
+	margin-left:62%;
+	display:block;
+}
+table.tickerStats td {
+	border-bottom:1px solid #DBEAFB;
+	font:.7em arial,sans-serif;
+	vertical-align:middle;
+	padding:.4em .4em .4em .5em;
+}
+table.tickerStats td.left {
+	background:#F4F7FB;
+	text-align:right;
+	font-weight:bold;
+	width:50%;
+	color:#666;
+}
+table.tickerStats td.right {
+	text-align:left;
+}
+table.tickerStats td input {
+	margin-top:10px;
+}
+table.tickerStats td.center a {
+	margin:0 .2em;
+}
+table.tickerStats td h3 {
+	font-size: 1em;
+}
+#mainContent table.tickerStats td p {
+	font-size:1em; /*Bump up size after it got reduced in table.tickerStats td. Add ID to increase weight. */
+}
+.center {
+	text-align:center;
+}
+.pitchInputOne,
+.pitchInputTwo {
+	border:1px solid #ddd;
+	background:#fff;
+	height:120px;
+	width:220px;
+}
+/* -- [ Sidebar ] --------------------------------------------*/
+#sideBar h3 { 
+	margin-bottom:-.7em; 
+	padding-top:1em; 
+	font-size:.7em; 
+	border-top:1px solid #dadada; 
+}
+#sideBar p {
+	margin-bottom:1.1em;
+	font-size:.7em;
+}
+#sideBar table {
+	margin-bottom:.2em;
+}
+
+#sideBar table td img {
+	margin-top:3px;
+}
+html>body #sideBar table td img {
+	margin-top:2px;
+}
+/* Top Player */
+#topDog {
+	
+}
+/* Partner Credit */
+#sideBar #partnerCredit {
+	margin-bottom:1em;
+	padding:.8em 0;
+	text-align:center; 
+	clear:both;
+	border-top:1px solid #dadada; 
+	border-bottom:1px solid #dadada; 
+}
+/* -- [ Footer ] --------------------------------------------*/
+#footer { 
+	margin-top:2px; 
+	padding-bottom:.6em;
+	border-top:1px solid #eee;
+	clear:both;
+	background:#fff;
+}
+#footer p { 
+	margin:0;
+	line-height:1.5em;
+	font-size:.7em; 
+}
+#footer #copyright {
+	padding:.8em 1.3em 0 0;
+	float:right;	
+	color:#333;
+}
+#footer #footerNav {
+	padding:.8em 0 0 1.3em;
+	float:left;	
+	color:#ddd;
+}
+/* -- [ Page:Home ] --------------------------------------------*/
+/* Player Quick Stats */
+body#index table.yourStatsWinning,
+body#index table.yourStatsLosing,
+body#index table.yourStatsTied {
+	width:100%;	
+}
+body#index table.yourStatsWinning td,
+body#index table.yourStatsLosing td,
+body#index table.yourStatsTied td {
+	padding:.5em 1em;
+	font:.7em tahoma, arial, sans-serif;
+}
+body#index table.yourStatsWinning th {
+	background:#91c559;
+}
+body#index table.yourStatsLosing th {
+	background:#db684f;
+}
+body#index table.yourStatsTied th {
+	background:#888;
+}
+body#index table.yourStatsWinning th,
+body#index table.yourStatsLosing th,
+body#index table.yourStatsTied th {
+	color:#fff;
+	font:10px arial,sans-serif;
+	text-align:center;
+}
+/* Rotating Top Fives */
+#innerDiv {
+	position:relative;
+}
+#innerDiv .listSubTitle {
+	display:none;
+}
+#innerDiv h3 {
+	display:none;
+}
+#innerDiv h4 {
+	font:bold .7em arial,sans-serif;
+}
+#innerDiv p.viewmore {
+	display:none;
+}
+#innerDiv p.viewMoreResults {
+	text-align:right;
+}
+#innerDiv p {
+	margin-bottom:.2em;	
+}
+body#topLists p.viewmore,
+#sideBar p.viewmore {
+	display:none !important;
+}
+.innerDiv .topTenListforTickers table {
+	width:100%;	
+}
+.innerDiv table {
+	margin:0;
+	font-size:.7em;
+}
+.innerDiv table td {
+	padding:.3em;
+}
+.innerDiv table td.left {
+	width:18em;
+}
+.innerDiv table td.center {
+	width:70px;
+	text-align:left;
+}
+.innerDiv table td.right {
+	text-align:right;
+}
+.innerDiv table td.showUpIcon {
+	background-image:url("http://g.fool.com/art/ratings/Outperform.gif");
+	background-repeat:no-repeat;
+	background-position:center left;
+	padding-left:26px;	
+	padding-bottom:.3em;
+	text-align:left;
+	width:4em;		
+}
+.innerDiv table td.showDownIcon {
+	background-image:url("http://g.fool.com/art/ratings/Underperform.gif");
+	background-repeat:no-repeat;
+	background-position:center left;	
+	padding-left:26px;
+	padding-bottom:.7em;	
+	text-align:left;
+	width:4em;			
+}
+.innerDiv table tr.tableheader {
+	background:transparent;
+	border-bottom: 1px solid #fff;
+	text-align:center;
+}
+.innerDiv table tr.tableheader td {
+	text-align:center;
+}
+.innerDiv table td.moduleMed {
+	font-weight:bold;
+	padding-left:3em;
+	padding-right:3em;
+	text-align:center;
+}
+.innerDiv table td.moduleWide {
+	font-weight:bold;
+	padding-left:4em;
+	padding-right:4em;
+	text-align:center;
+}
+
+#top5controls {
+	z-index:99999;
+	position:absolute;
+	top:.3em;
+	right:0;	
+	width:10.5em;
+}
+#top5controls div {
+	float:left;
+	margin-right:7px;
+}
+#rotatorMessage {
+ font:bold .7em arial,sans-serif;
+ width:12em;
+ z-index:999;
+}
+#rotatorMessage a {
+	font-weight:normal;
+}
+
+/* Blog Roll box */
+#blogRoll h3 {
+	display:none;
+}
+#blogRoll .listSubTitle {
+	display:none;
+}
+#blogRoll .tableheader {
+	display:none;
+}
+
+
+/* Game Overview promo module */
+#gameOverview img {
+	margin:.6em 0 1.2em 0;
+}
+/* Alert Specific */
+#overlayalerts {
+	width:18em;
+}
+html > body #overlayalerts {
+	width:18em;
+}
+#mainContent #overlayalerts p {
+	font-size:.7em;
+	line-height:1.5em;
+}
+#mainContent #overlayalerts p .timestamp {
+	font:normal .9em "Trebuchet MS", arial, sans-serif;
+	text-transform:uppercase;
+	color:#919191;
+}
+/* Lucky Charms */
+#luckyCharms {
+	margin-left:70px;
+}
+#luckyCharms img {
+	margin:.4em .2em 0 0;
+}
+/* Player Bio*/
+#playerProfile {
+	margin-bottom:.7em;
+	margin-top:.5em;
+}
+#playerProfile img.avatar  {
+	border:4px solid #e8ebec;
+	padding:4px;
+	position:relative;
+	float:left;
+	margin-bottom:5em;
+}
+#newAlerts {
+	background:url("http://g.fool.com/art/ratings/icon_clock.gif") no-repeat 23px 0;
+	padding-left:0;
+	display:block;
+	text-align:right;
+	margin-left:16.5em;
+}
+.addPlayer {
+	padding:0 0 3px 22px;
+	background:url("http://g.fool.com/art/ratings/icon_adduser.gif") no-repeat 0 0;
+}
+.editBioContainer{
+ width:290px; 
+ margin:0 auto;
+}
+/* Profile table */
+table#profileForm {
+	border:1px solid #ddd;
+	margin-bottom:1em;
+	width:100%;
+	text-align:left;
+	background:#fff;
+}
+table#profileForm td {
+	border:none;
+	font:.7em arial,sans-serif;
+	padding:.5em .6em;
+	width:5em;
+}
+table#profileForm td .avatar img {
+	border:4px solid #e8ebec;
+}
+table#profileForm td.sectionHead {
+	font-weight:bold;
+	color:#687989;
+	background:#f3f3f3;
+	width:25em;
+}
+table#profileForm input.textField {
+	border:1px solid #ddd;
+	border-color:#aaa #ddd #ddd #aaa;
+	background:#ffe;
+}
+table#profileForm td select {
+	width:127px;
+	background:#ffe;
+}
+.errorText {
+	font-weight:bold;
+	color:#c30;
+}
+#mainContent p.bigErrorText {
+	font:bold .84em arial, sans-serif;
+	color:#fff;
+	background:#c30;
+	padding:0.5em 1em;
+}
+#mainContent p.bigSuccessText {
+	font:bold .84em arial, sans-serif;
+	border: 2px solid #3a3;
+	padding:0.5em 1em;
+}
+.successText {
+	font-weight:bold;
+	color:#393;
+}
+.upperCase {
+	text-transform:uppercase;
+}
+table#profileForm td p {
+	font-size:1em;
+}
+/* Personal Statement */
+#personalStatement {
+	margin:.5em 0;
+}
+/* Stock Picks */
+#multipleStockPick {
+	margin:.8em 0 1.1em 0;
+	padding:.5em;
+	background-color:#faf0ff;
+	text-align:center;
+	border:1px solid #e4cae1;
+	font-size:.7em;
+}
+#multipleWatchStockPick {
+	margin:.8em 0 1.1em 0;
+	padding:.5em;
+	background-color:#f3ffe8;
+	text-align:center;
+	border:1px solid #77b243;
+	font-size:.7em;
+}
+#multipleStockPick input.textField {
+	margin-right:.3em;
+	width:75px;
+}
+#multipleStockPick img {
+	margin:0 auto;
+}
+#multipleStockPick p {
+	margin-bottom:.3em;
+}
+#tableNav #tableFilterNav {
+	float:right;
+}
+#tableNav .tablePageNav {
+	float:left;
+}
+tr.tableheader {
+	background-color:#f5f5f5;
+	text-align:center;
+}
+.stattable tr.tableheader td {
+	vertical-align:bottom;
+	text-align:center;
+	font-weight:bold;
+	color:#444;
+}
+/* Stock Picks Left Aligned */
+#picks #multipleStockPick #picksLeftAligned{
+	float:left;
+	text-align:left;
+	margin:1em 2em 0.5em 1em;
+	font-size:1.1em;
+}
+#picks #multipleStockPick #picksLeftAligned p{
+	font-size:.9em;
+}
+#picks #multipleStockPick #picksLeftAligned input{
+	width:15em;
+}
+#picks #multipleStockPick #picksLeftAligned img{
+	vertical-align:top;
+}
+#picks #multipleStockPick #picksLeftAligned .valign{
+	margin-top:1px;
+}
+/* Stock Recommendations */
+#multipleStockPick .topTenListforTickers{
+	border:1px solid #82b835; 
+	float:right; 
+	text-align:left; 
+	background-color:#fff;
+	position:relative;
+}
+#multipleStockPick .topTenListforTickers h3{
+	font-size:1.1em;
+	color:#fff;
+	background-color:#82b835;
+	font-weight:bold;
+}
+#multipleStockPick .topTenListforTickers h3 img{
+	vertical-align:middle;
+	padding:2px;
+	padding-right:.4em;
+	position:relative;
+}
+#multipleStockPick .topTenListforTickers p{
+	background:url("http://g.fool.com/art/ratings/bgStockRecs.gif") repeat-x bottom;
+	border:1px solid #ccc; 
+	font-size:.8em;
+	width:6em;
+	height:3.3em;
+	float:left; 
+	text-align:center; 
+	margin:1px;
+	padding:4px 1px;
+	color:#999;
+}
+#multipleStockPick .topTenListforTickers a{
+	font-size:1em;
+}
+#multipleStockPick .topTenListforTickers a.STFTicker{
+	display:block;
+	font-size:1.1em;
+}
+#multipleStockPick .topTenListforTickers .help{
+	float:left; 
+	clear:left; 
+	padding:3px; 
+	font-size:1em;
+	width:24em;
+}
+/* Favorites Carousel */
+#favSlideshow {
+	text-align:center;
+	margin-left:.5em;
+}
+p#addFavs {
+	margin-bottom:0;
+	padding-bottom:.3em;
+	text-align:center;
+} 
+p#addFavs a {
+	margin:0 auto;
+	padding:0 0 .3em 20px;
+	background:url("http://g.fool.com/art/ratings/icon_addgroup.gif") no-repeat 0 0;
+} 
+.noFavs {
+	padding:2em 1.1em;
+	background-color:#f9fbfc;
+	text-align:center;
+	position:relative; /* IE6 Peekaboo Bug */
+}
+.noFavs p {
+	margin:0 auto;
+	padding:2px;
+	text-align:center;
+	font-size:1.1em;
+	}
+/* Community Commentary (AKA) Buzz Box */
+body#index #divBuzz {
+	margin-top:1.5em;
+}
+#divBuzz {
+	margin-bottom:.3em;
+	border:1px solid #F9E2AD;
+	background-color:#fff;	
+	background:url("http://g.fool.com/art/ratings/buzzBoxBackground2.gif") repeat-x top;
+	padding:2px;
+}	
+.buzzHeader{
+	background:#efbe4f url("http://g.fool.com/art/ratings/buzzbox_header_bg4.gif") repeat-x;
+	padding:0;
+	margin:0;
+	text-align:right;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+.playerPicksHeading {
+	margin-top:1em;
+}
+.buzzTitle{
+	float:left;
+	margin-top:.55em;
+	padding-left:1.3em;
+	position:relative;
+}
+.pitchNav{
+	height:30px;
+}
+.nextBuzz{
+	margin:.6em .5em .5em .5em;
+	padding:0;
+	float:right;
+}	
+.filterSelect{
+	margin:.5em .5em .4em .5em;
+	padding:0;
+	float:right;
+}
+#divCommunityChatterBox{
+	margin:0 0 1em 0;
+	padding:0;
+}
+h2#buzzBoxHeader {
+	margin-bottom:.4em;
+}
+.filter{
+	margin-bottom:.2em;
+	padding:0;
+	line-height:1.5em;	
+}
+#divBuzz abbr, p.timestamp abbr {
+	border:none;
+	color:#666;	
+}
+#divOpenBuzzBoxLink p,
+#divCloseBuzzBoxLink p {
+	background:#fff;	
+	font-weight:bold;
+	color:#eaa900;
+	font-size:.7em;
+	clear:both;
+	margin-bottom:0;	
+	text-align:right;
+	padding-right:1em;
+	padding-bottom:.3em;
+	margin-top:7px;
+	background:transparent url("http://g.fool.com/art/ratings/buzzbox_header_link_bg5.gif") top left repeat-x;
+}
+#divOpenBuzzBoxLink p {
+	text-align:left;
+	padding-left:.3em;
+}
+#divCloseBuzzBoxLink p {
+	background:#fff;
+}
+#divOpenBuzzBoxLink a:link,
+#divOpenBuzzBoxLink a:visited,
+#divCloseBuzzBoxLink a:link,
+#divCloseBuzzBoxLink a:visited {
+	text-decoration:underline;
+}
+#divOpenBuzzBoxLink a:hover,
+#divCloseBuzzBoxLink a:hover {
+	color:#c30;
+}
+p.pitchNav {
+	margin:0;
+	padding:0;
+	text-align:right;
+	position:relative;
+	float:left; 
+}
+p.pitchNav select {
+	width:10em;
+	font-size:10px;	
+	margin:0px;
+}
+p.pitchNav label {
+	font-size:10px;
+	font-weight:bold;
+	color:#474747;
+}
+.pitchNav select {
+	font-size:10px;
+}
+.pitchBody{
+	margin:0;
+	padding:15px;
+	border:0px solid #fedb89;
+	border-top:none;
+	border-bottom:none;
+	clear:both;
+	position:relative;
+}
+.pitchBody #snapshot{
+	float:right; 
+	border:1px solid #F3CF71; 
+	padding:.6em; 
+	text-align:center; 
+	margin-left:1.5em;
+	background-color:#fffff7;
+	width:6.5em;
+}
+.pitchBody #snapshot p{
+	line-height:14px;
+}
+.pitchBody #snapshot a{
+	font-size:.7em; 
+	display:block; 
+	text-align:center;
+	margin-bottom:2px;
+}
+.pitchBody #snapshot .statsContainer{
+	text-align:left; 
+	margin-top:10px;
+}
+#mainContent table.picksCommentView tr td .pitchBody {
+	margin:0;
+	padding:10px;
+}
+.pitchBlogView {
+	border:1px solid #dbeafb;
+	margin-bottom:-1px;
+	background:#fff;
+	position:relative;
+}
+.pitchBody .pitchRecs {
+	width:66px;
+	text-align:center;
+	float:left;
+}
+.pitchBody .pitchReply .pitchRecs {
+	display:none;
+}
+.pitchBody .pitchRecs .recWrap {
+	margin:0 0 .5em 0;
+	padding:0 0 .2em 0;
+	background:#fcfdb1 url("http://g.fool.com/art/ratings/rec_bg3.gif") no-repeat top left;
+	border:1px solid #fedb89;
+}
+#divBuzz .pitchBody .pitchRecs h3,
+#mainContent table.picksCommentView tr td .pitchBody .pitchRecs h3 {
+	margin:0;
+	font-weight:bold;
+	font-size:1.5em;
+}
+#divBuzz .pitchBody .pitchRecs p,
+#mainContent table.picksCommentView td .pitchBody .pitchRecs p {
+	margin-top:.5em;
+	margin-bottom:0;
+	padding:0;
+	font-size:.7em;
+}
+.pitchNavLeft{
+	margin-top:1em;
+}
+.pitchNav input {
+	margin:0;
+	padding:0;
+}
+.initialPitch h3.companyName {
+	font-size:1em;
+	padding:0;
+}
+.pitchReply h3#companyName { /* Hide header on replies(it'll still be picked up by microformats tools) */
+	display:none;
+}
+.initialPitch {
+	margin-left:65px;
+	position:relative;
+}
+.initialPitch img.valign {
+	padding-right:.3em;	
+}
+.pitchReply {
+	padding-top:10px;
+	margin-left:1em;
+	float:left;
+	border-top:1px solid #F3CF71;
+	background-color:#fef6e4;
+	width:33.5em;
+}
+html>body .pitchReply {
+	margin-left:5em;
+	width:34em;
+}
+.hreview {
+	padding-left:1em;
+}
+.pitchReply p.recs {
+	padding-top:2px;
+	margin-right:10px;
+	float:right;
+}
+.pitchReply p.timestamp {
+	float:left;
+	margin:0;
+}
+#bullBearContainer img.valign{
+	vertical-align:text-top;
+	}	
+.pitchReply blockquote.description {
+	clear:both;
+	margin-bottom:.2em;
+}
+#divBuzz .pitchBody .initialPitch p,
+#mainContent table.picksCommentView tr td .pitchBody .initialPitch p {
+	margin-bottom:.2em;
+}
+#divBuzz textarea,
+#topBullPitch textarea,
+#topBearPitch textarea {
+	font:.8em arial,sans-serif;
+}
+blockquote.description {
+	font-size:.8em;
+	line-height:1.3em;
+	margin-top:.8em;
+}
+.postPitch {
+	margin-top:20px;
+	margin-left:80px;
+}
+.postPitch textarea {
+	margin-top:1em;
+	font-size:.8em;
+	border:1px solid #ccc; 
+	background:#ffe;
+	position:relative;
+	padding:.5em;
+	width:97%;
+	overflow:auto;
+}
+.postPitch .btnWrap {
+	margin:.5em 0;
+	padding:0;
+	width:100%;
+}
+.postPitch input {
+	position:relative;
+}
+.pitchReply .postPitch textarea {
+	clear:both;
+}
+.buzzpipe{
+	color:#bcd9f0;
+	padding:4px;
+}
+.pitchBody fieldset{
+	border:1px solid #F3CF71;
+	width:110px; 
+	float:right; 
+	margin-left:15px; 
+}
+.pitchBody legend{
+	color:#F1BD4F; 
+	display:block; 
+	font-size:.9em; 
+	font-weight:bold; 
+	margin-left:3px;
+}
+.pitchBody ul{
+	font-size:.7em; 
+	line-height:18px; 
+	padding:5px; 
+	padding-top:0; 
+	list-style:none
+}
+.rowHighlight{
+	background-color:#FBFBFC
+}	
+#bullBearContainer .dtreviewed{
+	display:block;
+	margin-top:-8px;
+	margin-left:30px;
+}
+/* View Alerts Pop-Up Window */
+body#viewAlerts {
+	padding:14px 20px;
+	background-image:none;	
+	text-align:left;
+	background: #fff;	
+}
+body#viewAlerts p {
+	font-size:.7em;
+	line-height:1.5em;
+	margin-bottom:.7em;
+	float:none;
+	width:auto;
+}
+body#viewAlerts p.alert {
+	margin-bottom:1.1em;
+	padding-bottom:.8em;
+	border-bottom:1px solid #ddd;
+}
+body#viewAlerts p.delete {
+	padding:0 0 3px 21px;
+	background:url("http://g.fool.com/art/ratings/icon_clock_delete.gif") no-repeat 0 0;
+}
+body#viewAlerts p.timestamp {
+	margin-bottom:0;
+}
+body#viewAlerts h1 {
+	margin-bottom:.3em;
+}
+/* -- [ Page:My Player and View Player ] --------------------------------------------*/
+body#myPlayer p.chartLegend,
+body#viewPlayer p.chartLegend {
+	margin-bottom:0;
+	font-weight:bold;
+}
+.blogBox {
+	margin-top:1px;
+	margin-bottom:.8em;
+	border:1px solid #fff3ac;
+	background:#fffdf1 url("http://g.fool.com/art/ratings/blogBox_bg.gif") repeat-x top left;
+}
+.blogBox #blogMain .blogPost p {
+	font:.8em arial,sans-serif;
+}
+.blogBox #blogMain .blogPost h3 {
+	font:bold 1em arial,sans-serif;
+	margin-bottom:1em;
+}
+.blogPost{
+	position:relative;
+	z-index:100;
+}
+.blogBox h1 {
+	padding:10px 0 89px 11px;
+	margin:0;
+	background:transparent url("http://g.fool.com/art/ratings/blogBox_comment.gif") no-repeat top right;
+	position:relative;
+}
+.blogBox h3 {
+	margin:0 0 .2em 0;
+	font:.8em arial,sans-serif;
+	color:#4c91e6;
+}
+.blogBox h3 a {
+	color:#4c91e6;
+}
+.blogBox h3 a:hover {
+	color:#999;
+}
+body#viewPlayer #blogMain {
+	margin-top:-79px;
+	padding:.8em 1.1em 0 1.1em;
+}
+body#viewPlayer #blogMain p.timestamp {
+	color:#999;
+	margin-bottom:.2em;
+	text-transform:uppercase;
+	font-size:.6em;
+}
+body#viewPlayer #blogMain p.entry {
+	font-size:.8em;
+}
+body#viewPlayer #blogSideBar {
+	display:none;
+}
+#blogSideBar img {
+	margin-bottom:.5em;
+}
+#blogSideBar p {
+	color:#666;
+}
+div#blogSideBar {
+	padding-right:.5em;
+}
+/* No blog entries in the past 30 days. */
+body#viewPlayer .noPost {
+	position:relative; /*added to keep h2 from jumping around in IE when you click tabbed nav*/
+}
+body#viewPlayer .noPost h1 {
+	padding:.4em;
+	background-image:none;
+	float:left;
+}
+body#viewPlayer .noPost h3 {
+	margin:0;
+	padding:12px 0 0 .3em;
+	font:bold .7em arial,sans-serif;
+	color:#666;
+	float:left;
+}
+body#blog .tabsContents h2 {
+	background:#F4F7FB;
+}
+/* -- [ Page:View Avatars ] --------------------------------------------*/
+body#viewAvatars {
+	padding:20px 8px 17px 20px;
+	background-image:none;	
+	text-align:left;
+}
+body#viewAvatars .avatar img {
+	margin:.3em;
+	padding:4px;
+	float:left;
+	border:4px solid #e8ebec;
+}
+body#viewAvatars h2 {
+	margin-bottom:.2em;
+	clear:left;
+}
+body#viewAvatars #yourAvatar {
+	margin:.3em 0 .9em .3em;
+	padding:17px;
+	width:314px;
+	background-color:#f8f5f8;
+}
+body#viewAvatars #yourAvatar img {
+	background-color:#fff;
+	padding:4px;
+	border:4px solid #dcccda;	
+	float:left;
+}
+body#viewAvatars #yourAvatar input { 
+	margin-right:.5em;
+}
+body#viewAvatars #yourAvatar #buttons {
+	padding:17px 0 0 11px;
+	float:left;
+}
+/* -- [ Page:Player Rankings ] --------------------------------------------*/
+/* Browse A-Z */
+ul#browse li {
+	margin-bottom:.4em;
+	float:left;
+	list-style-type:none;
+}
+ul#browse li a {
+	padding:2px;
+	text-align:center;
+	font-size:.6em;
+	display:block;
+}
+h3.browse,
+p.browse {
+	position:relative;
+	float:left;
+	font:bold .7em arial,sans-serif;
+}
+/* Stats Table */
+.stattable {
+	width:100%;
+	margin-bottom:.4em;
+	border:1px solid #ddd;
+	border-right:none;
+	border-bottom:none;
+	background-color:#fff;
+}
+.stattable tr, 
+.stattable td {
+	vertical-align:top;
+	border:1px solid #ddd;
+	border-top:none;
+	border-left:none;
+}
+.stattable td {
+	font-size:.7em;
+	padding:0.4em .6em;
+}
+#sideBar .stattable,
+#sideBar .stattable td,
+#sideBar .stattable tr {
+	border:none;
+}
+body#playerRankings p.pagination {
+	margin-bottom:.8em;
+	padding:0;
+	float:left;
+	font-weight:bold;
+}
+body#playerRankings p.displayFavs {
+	margin-bottom:.8em;
+	padding:0;
+	float:right;
+	text-align:right;
+}
+/* -- [ Page:Ticker ] --------------------------------------------*/
+/* Search Module */
+body#tickerRankings p.pagination {
+	margin:.7em 0;
+	padding:0;
+	font-weight:bold;
+}
+body#tickerRankings p.paginationBottom {
+	margin:0;
+	font-weight:bold;	
+}
+body#tickerRankings table.stattable {
+	margin-bottom:.7em;
+}
+/* -- Progress bars --*/
+#allStars {
+	margin-top:1em;	
+}
+.progressbarContainer {
+	border:1px solid #d9d3c7;
+	padding:1px;
+	margin-bottom:1em;
+	position:relative;
+}
+.progressbar {
+	border:1px solid #d9d3c7;
+	border-color:#d9d3c7 #c2b9aa #c2b9aa #d9d3c7;
+	padding:0;
+	font-size:8px;
+	background:transparent url( "http://g.fool.com/art/ratings/barchart_bg_red.gif" ) -3px -3px repeat-x;
+	position:relative;	/* IE6 Peekaboo Bug */
+}
+.progressbar div {
+	background:transparent url( "http://g.fool.com/art/ratings/barchart_bg_green.gif" ) -3px -3px repeat-x;
+}
+div.totalbulls {
+	position:relative;
+	float:left;
+	width:45%;
+	font:.7em arial,sans-serif;
+}
+div.totalbears {
+	margin-left:45%;
+	text-align:right;	
+	font:.7em arial,sans-serif;
+}
+.totalbears strong,
+.totalbulls strong {
+	color:#878787;
+	font-weight:bold;
+}
+#replyText textarea,
+#topDog textarea {
+	border:1px solid #ddd;
+	background:#fff9f0;
+	border-color:#b7babd #e0e4e7 #e0e4e7 #b7babd;
+}
+#topDog textarea {
+	height:100px;
+}
+#replyText p {
+	margin-bottom:.3em;
+}
+#replyText .buttonContainer {
+	padding-bottom:.5em;
+}
+#replyText .buttonContainer input,
+#previewText .buttonContainer input {
+	margin:0 .5em;
+}
+#replyText textarea,
+#previewText textarea {
+	margin-top:1.5em;
+	font:1em arial,sans-serif;
+	width:100%;
+	height:200px;
+}
+#replyText fieldset,
+#previewText fieldset {
+	padding:0 1.5em 1.5em 1.5em;
+	font-size:.8em;
+	color:#666;
+	margin:1em 0;
+	border:1px solid #ddd;
+}
+#replyText legend,
+#previewText legend {
+	display:inline;
+	font-weight:bold;
+	color:#000;
+}
+#replyText blockquote,
+#previewText blockquote {
+ padding-top:1em;
+ line-height:1.4em;
+}
+.pitchPreview {
+	text-align:left;
+	font-size:1.2em;
+	border:1px solid #d2d9db; 
+	padding:1.4em;
+	margin:1em 0 .5em 0;
+	background:#fff url("http://g.fool.com/art/ratings/pitchPreviewHeader.gif") repeat-x top left;
+	overflow:auto;
+}
+html>body .pitchPreview {
+	padding:1em;
+}
+input.readonly {
+	border:0;
+	width:25px;
+	background:#fef67c;
+}
+p.readonly {
+	text-align:center;
+	color:#555;
+	font-size:.6em;
+	width:25em;
+}
+#ratingStatus h4 {
+	font:bold .8em arial, sans-serif;
+	padding:.2em;
+	text-align:center;
+	border:1px solid #e0e4e7;
+	background:#efefef;
+	margin-bottom:1em;
+	clear:both;
+	position:relative;
+}
+/* default win/lose colors */
+.red {
+	color:#c30;
+}
+.green {
+	color:#393;
+}
+/* Multiple ticker entry styling */
+body#multiTicker {
+	padding-top:1em;	
+}
+table.multiTicker,
+table.multiTickerResult {
+	background:#F4F7FB;
+	border:1px solid #D3DAE4;
+	border-collapse:collapse;
+}
+table.multiTicker,
+table.multiTickerResult {
+	margin:1em auto .5em auto;	
+	width:620px;
+}
+table.multiTicker td,
+table.multiTickerResult td,
+table.multiTicker th,
+table.multiTickerResult th {
+	padding:.4em;
+	vertical-align:top;
+	text-align:left;
+	font:.7em arial,sans-serif;
+}
+table.multiTicker th,
+table.multiTickerResult th {
+	padding:.2em .2em .2em .6em;
+	color:#000;
+	background:#F4F7FB;
+	font-weight:bold;
+}
+table.multiTickerResult tr {
+	border-bottom:1px solid #D3DAE4;
+}
+.multiTickerLinks {
+	margin:0 auto .5em auto;
+	width:600px;
+}
+#multiTicker .textInput,
+#multiTicker textarea,
+#multiTicker select {
+	border:1px solid #aaa;
+	border-color:#aaa #ddd #ddd #aaa;
+	background:#ffe;
+	font:11px arial,sans-serif;
+}
+#multiTicker .textInput {
+	width:4em;
+	font:1em arial,sans-serif;
+	padding:.08em;
+}
+#multiTicker textarea {
+	width:300px;
+	height:40px;
+	padding:.1em .3em .1em .3em;
+}
+
+/* Ticker star rating */
+#starRating dl {
+	clear:left;
+	font-size:.7em; 
+}
+#starRating dt {	
+	margin-right:.3em;
+	padding-top:.1em;
+	clear:left; 
+	float:left; 
+	color:#000;
+	font-weight:bold;
+}
+#starRating dd {
+	float:left; 
+	display:block; 
+	width:150px; 
+}
+#starRating dd img {
+	margin-right:.5em;
+	float:left; 
+}
+#starRating dd span {
+	line-height:1.4em; 
+}
+#starRating p {
+	margin-bottom:.8em;
+	clear:both;
+}
+/* Change Pick Duration */
+body#changePickDuration {
+	padding:15px 20px;
+	text-align:left;
+	background-image:none;
+}
+body#changePickDuration h1 {
+	margin-bottom:.4em;
+}
+body#changePickDuration table {
+	margin-bottom:.6em;
+	border:1px solid #ddd;
+	border-right:none;
+	border-bottom:none;	
+}
+body#changePickDuration table td,
+body#changePickDuration table th {
+	font-size:.7em;
+	text-align:left;
+	vertical-align:top;	
+	padding:.4em .6em;	
+}
+body#changePickDuration table tr,
+body#changePickDuration table td,
+body#changePickDuration table th {
+	vertical-align:top;
+	text-align:left;
+	border:1px solid #ddd;
+	border-top:none;
+	border-left:none;
+}
+body#changePickDuration table th {
+	background-color:#f5f5f5;
+}
+body#changePickDuration p {
+	padding:.4em 0 0 .4em;
+	font-size:.7em;
+	float:left;
+	font-weight:bold;
+}
+body#changePickDuration input.button {
+	float:left;
+	margin-right:.3em;
+}
+p#corpAction {
+	padding:5px 5px 5px 30px;
+	border:3px solid #fff840;
+	background:#fffcb0 url("http://g.fool.com/art/ratings/icon_error.gif") no-repeat 7px 50%;
+}
+/* -- [ Page:Top Tens ] --------------------------------------------*/
+body#topLists #mainContent p {
+	margin-bottom:0;
+}
+body#topLists #mainContent div table tr.tableheader td,
+body#topLists #mainContent div table td.center {
+	text-align:center;
+}
+body#topLists #mainContent div table td.right {
+	text-align:right;
+}
+body#topLists #mainContent div table td.left {
+	text-align:left;
+}
+/* Top Tens Link Boxes */
+.topTenListsContainer{
+	float:left;
+	width:12em;
+	margin:0 .4em .8em 0;
+	padding:0;
+	}
+.topTenNavTab{
+	width:17em;
+	}	
+.topTenLinksActive{
+	width:10.7em;
+	background-color:#fff;
+	border:1px solid #ddd;
+	clear:both;
+	padding:.5em;
+	margin:0;
+	height:10em;	
+	}		
+.topTenLinks{
+	width:10.7em;
+	background-color:#fff;
+	border:1px solid #ddd;
+	clear:both;
+	padding:.5em;
+	margin:0;
+	height:10em;	
+	}	
+.topTenLinks li, .topTenLinksActive li{
+	list-style-type:none;
+	font-size:.7em;
+	line-height:1.5em;
+	}
+
+/* Simple View */
+#divTopStocksTickerStats{
+	width:100%
+}
+#divTopTenListforTickersAjax {
+	width:100%
+}
+.floatLeft {
+	float:left;
+	position:relative;	
+}
+#topLists .floatLeft {
+	margin-right:1em;	
+}
+.topTenListforTickers{
+	float:left;
+	position:relative;
+}
+#innerDiv .topTenListforTickers{
+	float:none;
+}
+#divTopStocksTickerStats #topTenListforTickers p {
+	width:34.5em;
+}
+.topTenListforTickers h3 {
+	font-size:1em;
+}
+p.viewMode {
+	padding-bottom:1em;	
+}
+.statscolsim,
+.statscol {
+	width:100%;
+}
+.statscolsim table,
+.statscol table {
+	width:29em;
+	border:1px solid #D3DAE4;
+	border-collapse:collapse;
+	background:#fff;
+	margin:.5em 1em 1em 0;
+}
+.statscolsim table td,
+.statscol table td {
+	vertical-align:top;
+	text-align:left;
+	border:1px solid #D3DAE4;
+	font:.7em arial,sans-serif;
+	padding:.3em;
+}
+.statscolsim p,
+.statscol p {
+	margin-bottom:.2em;
+	clear:both;
+}
+/* Detailed View */
+.statscol table {
+	width:98%;
+}
+html>body .statscol table {
+	width:100%;
+}
+/* -- [ Page:Tag Rankings ] --------------------------------------------*/
+body#tagRankings table#addNewTag,
+body#viewTag table#addNewTag {
+	width:auto;
+	}
+body#tagRankings table#addNewTag th,
+body#tagRankings table#addNewTag td,
+body#viewTag table#addNewTag th,
+body#viewTag table#addNewTag td {
+	font-size:.7em;
+	text-align:left;
+	vertical-align:middle;
+}
+body#tagRankings table#addNewTag th,
+body#viewTag table#addNewTag th {
+	padding:.5em 0 .2em 0;
+}
+body#tagRankings table#addNewTag td,
+body#viewTag table#addNewTag td {
+	padding-bottom:.2em;
+}
+body#tagRankings table#addNewTag td input.text,
+body#viewTag table#addNewTag td input.text {
+	width:145px;
+}
+body#tagRankings table#addNewTag td input.button,
+body#viewTag table#addNewTag td input.button {
+	margin:0 .3em;
+}
+.viewTagsHeading {
+	position:relative;
+	float:left;
+	width:26em;
+}
+table.aggstatsBox {
+	margin-bottom:1em; 
+	margin-left:1em;
+	width:22em; 
+	float:right;
+}	
+table.aggstatsBox td {
+	border:1px solid #fce0cd;
+	font:bold .7em arial,sans-serif;
+	padding:.5em;
+	background-color:#fef7f2; 	
+}
+/* -- [ Page:Report Bugs and Feedback ] --------------------------------------------*/
+body#bugs #mainContent {
+	padding-bottom:1em;
+}
+#gameFeedback label {
+	display:block; 
+	width:140px; 
+	float:left; 
+	text-align:right; 
+	margin-right:12px; 
+}
+#gameFeedback p {
+	clear:left; 
+}
+#gameFeedback p .button {
+	margin-top:.5em; 
+}
+/* -- [ Overlay Next Generation ] --------------------------------------------*/
+#overlay,
+#overlayScoreLeader {
+	visibility:hidden;
+	display:block;
+	position:absolute;
+	margin:4px -6px -4px 4px;
+	background:url(http://g.fool.com/art/ratings/shadow-grid.gif) repeat;
+	width:500px;
+	z-index:20 !important;
+}
+#overlay p,
+#overlayScoreLeader p {
+	text-align:left;
+}
+html>body #overlay,
+html>body #overlayScoreLeader {
+	margin:10px -10px -10px 10px;
+	background:url(http://g.fool.com/art/ratings/shadow3.png) right bottom no-repeat;
+	z-index:20;
+}
+#overlay:before,
+#overlay:after,
+#overlayScoreLeader:before,
+#overlayScoreLeader:after {
+	content:" ";
+	display:block;
+	width:10px;
+	height:10px;
+	background:inherit;
+}
+#overlay:before,
+#overlayScoreLeader:before {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:-10px 0 0 auto;
+	background-position:right top;
+}
+#overlay:after,
+#overlayScoreLeader:after {
+	margin:-10px 0 0 -10px;
+	background-position:left bottom;
+}
+#overlay .overlayContent,
+#overlayScoreLeader .overlayContent {
+	display:block;
+	position:relative;
+	overflow:hidden; /* prevents margin leakage from child elements */
+	left:-4px;
+	top:-4px;
+	background:#fff;
+	border:2px solid #666;
+	z-index:2002;
+}
+html>body #overlay .overlayContent,
+html>body #overlayScoreLeader .overlayContent {
+	left:-10px;
+	top:-10px;
+	margin:0;
+	border:2px solid #666;
+}
+.overlayInner{
+	padding:1em 1em 0 1em;
+}
+.overlayInner h3 {
+	color:#000;
+	font:bold .9em "Trebuchet MS", Trebuchet, arial, sans-serif;
+}
+.overlayInner ul {
+	margin:.3em 0 0 1.2em;
+}
+.overlayInner li {
+	font-size:.7em;
+	line-height:1.5em;
+	margin-bottom:.4em;
+}
+.overlayClose {
+	display:block;
+	position:absolute;
+	right:3px;
+	top:3px;
+	padding:2px 4px 2px 4px;
+	font:bold .7em arial,geneva,sans-serif;
+	background:#c30;
+}
+html>body .overlayClose {
+	right:0px;
+	top:0px;
+}
+#overlay .overlayClose a:link {
+	color:#fff;
+	text-decoration:none;
+}
+#overlay .overlayClose a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+#overlay .overlayClose a:hover{
+	color:#000;
+	text-decoration:none;
+}
+/* -- [ Market Headlines ] --------------------------------------------*/
+div#marketHeadlines {
+	clear:both;
+	position:relative;
+}
+.innerDiv ul {
+	padding-left:.3em;
+	list-style-type:none;
+}
+.innerDiv ul li {
+	padding:0 0 .6em .6em;
+	font:.7em arial,verdana,sans-serif;
+	color:#666;
+	line-height:1.5em;	
+	position:relative; /* IE6 Peekaboo Bug */
+	/*background:url("http://g.fool.com/art/ratings/bullet_blue.gif") no-repeat 0 6px;*/
+}
+p.rating {
+	color:#4e0145;
+	font:bold 1em "Trebuchet MS", Trebuchet, arial,sans-serif;
+	text-transform:uppercase;
+	margin:.3em 0 .1em 0;
+}
+.rating strong {
+	font:bold 1.5em arial,sans-serif;
+}
+
+/* -- [ Ratings table ] KM added 11/14/05  -------------------------------*/
+.dataViewButton {
+	background:#e9e9e9 url("http://g.fool.com/art/ratings/button_bg_grey.gif") repeat-x top left;
+	border:1px solid #d8d8d8;
+	border-color:#d8d8d8 #999 #999 #d8d8d8;
+	font:9px arial,sans-serif;
+	color:#333;
+	cursor:pointer;
+	text-decoration:none;
+	width:100%;
+	letter-spacing:1px;
+}
+.dataViewButtonOver,
+.dataViewButton:hover {
+	background:#e0e0e0;
+	border:1px solid #d8d8d8;
+	border-color:#d8d8d8 #999 #999 #d8d8d8;
+	font:9px arial,sans-serif;
+	color:#000;
+	cursor:pointer;
+	text-decoration:none;
+	width:100%;
+	letter-spacing:1px;	
+}
+.pitchRecs .dataViewButton, .pitchRecs .dataViewButtonOver,
+.picksDataView .dataViewButton, .picksDataView .dataViewButtonOver {
+	width:100%;
+}
+a.dataViewLink:link,
+a.dataViewLink:visited,
+a.dataViewLink:hover {
+	background:#e9e9e9 url("http://g.fool.com/art/ratings/button_bg_grey.gif") repeat-x top left;
+	border:1px solid #d8d8d8;
+	border-color:#d8d8d8 #999 #999 #d8d8d8;
+	font:bold .7em arial,sans-serif;
+	color:#333 !important;
+	padding:2px 3px;
+	text-decoration:none;
+}
+a.dataViewLink:hover {
+	background:#e0e0e0;
+	border:1px solid #d8d8d8;
+	color:#000 !important;
+}
+.hiliteRow {
+	font-weight:bold;
+	background:#edf2f8;
+}
+.hiliteColumn {
+	background:#ffc;
+}
+table.tickerStats .chartLegend {
+	color:red;
+	text-align:center;
+	margin-bottom:.3em;
+}
+#yellowJersey {
+	padding:7px 0 0 0;
+	font:bold .7em arial, sans-serif;
+	position:absolute;
+	top:1em;
+	right:18em;
+}
+#yellowJersey img {
+	padding-right:2px;
+}
+#systemWorking {
+	background:#c30;
+	font:bold .8em arial,sans-serif;
+	width:8em;
+	padding:.2em;
+	color:#fff;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2000;
+}
+html>body #systemWorking {
+	position:fixed;
+}
+.tableheaderUp {
+	background:url("http://g.fool.com/art/quotes/ratings/interface/sort_uparrow_km1.gif") no-repeat center 0;
+}
+.tableheaderDown {
+	background:url("http://g.fool.com/art/quotes/ratings/interface/sort_downarrow_km1.gif") no-repeat center 0;
+}
+.mypointer {
+	cursor:pointer;
+}	
+#mainPromo,
+#mainAdMiddle {
+	margin:1em 0 1.8em 0;
+	text-align:center;
+	clear:both;
+}
+#resultsHeader h3 {
+	margin-top:.5em;
+}
+#resultsHeader h1 {
+	margin:0 0 .5em 0;
+	padding:0;
+}
+#resultsHeader .button,
+#resultsHeader .buttonOver {
+	margin:0 0 0 1em;
+	padding:.1em;
+}
+h1#titleStepInformation {
+	margin-top:1em;
+}
+h3#subtitleStepInformation {
+	margin-bottom:1em;
+	font-size:.9em;
+	color:#555;
+}
+p#mainCapRating {
+	font:bold 1.6em tahoma,arial,sans-serif;
+	margin:0;
+	color:#e75709;
+}
+.tableStrike {
+	color:#777;
+	text-decoration:line-through;
+}
+#tickerLookupPop {
+	width:390px;
+	text-align:center;
+	padding:0 1em .5em 1em;
+}
+#tickerLookupPop table {
+	margin:.5em auto .5em auto;
+}
+#tickerLookupPop table td {
+	text-align:left;
+}
+#tickerLookupPop h3 {
+	font:bold .9em arial,sans-serif;
+	color:#666;
+	margin-top:1em;
+}
+#tickerLookupPop p {
+	font:.7em arial,sans-serif;
+	padding-bottom:.3em;
+}
+#tickerLookupPop ul {
+	list-style-type:none;
+	margin-bottom:1em;
+}
+#tickerLookupPop ul li {
+	display:inline;
+	font:.7em arial,sans-serif;
+}
+#tickerLookupPop .button, 
+#tickerLookupPop .buttonOver {
+	padding:0;
+	margin-left:10px;
+}
+#tickerLookupPop input.textbox {
+	border:1px solid #aaa;
+	background:#ffe;
+	font-size:1em;
+}
+#searchOptions {
+	position:relative;
+	border:1px solid #ffe; /* keeps positioning for p.searchToggle from jumping in FF */
+}
+#searchOptions #simpleSearch p {
+	margin-bottom:0;
+}
+p.searchToggle {
+	text-align:right;
+	margin-bottom:1.2em;
+	position:absolute;
+	top:.5em;
+	right:1em;
+	width:20em;
+	z-index:20;
+}
+html>body p.searchToggle {
+	right:0;
+}
+#searchOptions .advSearchOptions {
+	margin-bottom:.5em;
+	vertical-align:middle;
+}
+#searchOptions .advSearchOptions input {
+	margin-right:.5em;
+}
+#searchOptions table td {
+	font:bold .7em arial,sans-serif;
+	color:#444;
+	padding:.3em 0;
+}
+#searchOptions h5 {
+	padding-top:5px;
+	margin-bottom:10px;
+}
+* html body #searchOptions h5 {
+		padding-top:5px; /* IE6 header padding */
+}	
+#searchOptions #pAdvSearchLink {
+	margin:0;
+	padding:0;
+	display:none;
+}
+#searchOptions #advancedSearch {
+	width:100%;
+}
+#searchOptions #pPredefinedSearch {
+	padding-top:3px;
+}
+.advancedSearchDropDown {
+	width:18em;
+}
+.rangeSliderWrap {
+	background-color:#fff; 
+	width:99%; 
+	border:1px solid #f5ecb9;
+}
+table.profileView {
+	background:#fff url("http://g.fool.com/art/ratings/pitch_reply_bg1.gif") repeat-x top left;
+}
+/* Search/Sort Utility */
+.slimsearch2 {
+	border:solid 1px #f5ecb9;
+	padding:2px 10px 8px 10px;
+	margin-bottom:.4em; 
+	background-color:#ffe; 
+}
+.suggestTag {
+	margin:1em 0;
+}
+ul.topTenNav {
+	margin:0 2em 0 0;
+	padding:0;
+	list-style-type:none;
+	position:relative;
+	float:left;
+	font:.7em arial,sans-serif;
+}
+ul.topTenNav li {
+	padding-bottom:.3em;
+}
+.linkButton,
+.linkButtonOver {
+	background:none;
+	border:none;
+	border-bottom:1px solid #4c91e6;
+	font-size:1em;
+	color:#4c91e6;
+	text-align:right;
+	font:bold 11px arial,sans-serif;
+	padding:0;
+	cursor:pointer;	
+}
+.linkButtonOver {
+	border-bottom:1px solid #c30;
+	color:#c30;
+}
+a.adHideLink {
+	font:.6em arial, sans-serif;
+	text-align:right;
+	margin:1em 0 0 0;
+	padding:0;
+	display:block;
+}
+span#inviteFriend a {
+	display:block;
+	position:relative;
+	float:right;
+	border:1px solid #666;
+	font:1em arial,sans-serif;
+	background:#efbe4f;
+	text-decoration:none;
+	padding:0 .3em;
+	margin-left:1em;
+}
+span#inviteFriend a:link,
+span#inviteFriend a:visited {
+	background:#efbe4f;
+}
+span#inviteFriend a:hover {
+	background:#eaaa15;
+}
+body#tellFriend {
+	text-align:center;
+	font-size:1em;
+}
+/* Invite a Friend Pop */
+#tellFriend #divInviteFriend{
+	text-align:left; 
+	padding:2em; 
+	margin:2em auto; 
+	border:1px solid #ccc; 
+	font-family:arial, sans-serif; 
+	width:600px;
+	background-color:#fff;
+}
+#tellFriend p,
+#tellFriend span,
+#tellFriend #txtEmailAddress {
+	font-size:.7em; 
+}
+#tellFriend span {
+	font-weight:bold;
+}
+#tellFriend p {
+	font-weight:bold;
+}
+.buttonSpace{
+	margin-left:1em;
+}
+.fieldSpace{
+	margin-top:2em;
+}
+.fieldSpace input.buttonEdit,
+.fieldSpace input.buttonEditOver,
+.fieldSpace input.button,
+.fieldSpace input.button:hover,
+.fieldSpace input.buttonEdit:hover {
+	font-size:1em;
+}
+/* Email Player */
+body#emailPlayer #mainContent label {
+	margin-bottom:.2em;
+	display:block;
+	font-weight:bold;
+}
+body#emailPlayer #emailWrap {
+	margin-bottom:.7em;
+}
+#confirmPick {
+	margin-top:1.2em;
+	font-size:100%;
+}
+#confirmPick p {
+	margin-bottom:.5em;
+}
+/* -- [ hovers ] --------------------------------------------*/
+.hoverContainer {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+	width:218px;
+}
+.hoverContainer ul{
+	text-align:center;
+}
+.hoverTop {
+	background: transparent url("http://www.fool.com/art/newsletters/images/bg_hover_top.png");
+	background-position:0 bottom;
+	height:11px;
+}
+a.ticker {
+	white-space:nowrap;
+}
+.hoverContents {
+	background: transparent url("http://www.fool.com/art/newsletters/images/bg_hover_middle.png");
+	padding:0 10px;
+	overflow:hidden;
+} 
+.hoverContents p {
+	font:.7em arial,sans-serif;
+}
+.hoverContents .info p {
+	text-align:left;
+	margin:1em;
+	margin-top:0;
+}
+.hoverContents img {
+	position:relative;
+	overflow:visible; /* fix ie not showing image sometimes */
+} 
+.hoverContents a {
+  position:relative;
+} 
+.hoverContents h4 {
+	color:#cc6600;
+	margin:0 0 5px 0;
+	text-align:center;
+} 
+.hoverContents h4 span {
+	color:#999;
+} 
+.hoverContents .tickerPerformance {
+	font-size:.9em;
+	text-align:center;
+} 
+.hoverContents .tickerPerformance img {
+	vertical-align:middle;
+} 
+.hoverContents a.ssChart img {
+	padding:0;
+} 
+.hoverContents ul {
+	margin-bottom:.3em;
+	list-style-type:none;
+} 
+.hoverContents ul li {
+	list-style-type:none;
+	color:#000;
+	font:.7em arial,sans-serif;
+}
+.hoverContents ul{
+	margin-right:7px;
+}
+.hoverContents li {
+	list-style-type:none;
+	color:#000;
+	font:.7em arial,sans-serif;
+	padding:2px;
+}
+div.hoverContents .title {
+	font:bold .7em arial,sans-serif;
+}
+.hoverContents .timestamp {
+	font:normal .7em arial, sans-serif;
+	text-transform:uppercase;
+	color:#919191;
+	padding-top:.5em;
+}
+.hoverClose {
+	position:relative; 
+}
+.hoverClose a, .hoverClose a:visited {
+	display:block;
+	padding:1px 3px;
+	background:#c30;
+	color:#fff;
+	border:1px solid #8a2300;
+	border-color:#ff551c #8a2300 #8a2300 #ff551c;
+	font:bold 9px arial,sans-serif;
+	position:absolute;
+	top:0px;
+	right:9px;
+	text-decoration:none;
+	text-align:center;
+}
+.hoverBottom {
+	background: transparent url("http://www.fool.com/art/newsletters/images/bg_hover_bottom.png");
+	background-position:0 top;
+	height:16px;
+}
+.hoverText {
+	text-align:left;
+}
+* html .hoverContainer div {
+	background-image: none;
+}
+* html .hoverTop {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://www.fool.com/art/newsletters/images/bg_hover_ie_top.png, sizingMethod='crop');
+	overflow:hidden;
+}
+* html .hoverContents {
+	height:1%;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://www.fool.com/art/newsletters/images/bg_hover_middle.png, sizingMethod='scale');
+}
+* html .hoverContents a {
+	position:relative;
+}
+* html .hoverBottom {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://www.fool.com/art/newsletters/images/bg_hover_ie_bottom.png, sizingMethod='crop');
+	overflow:hidden;
+}
+li.hoverRowFill{
+	background-color:#f1f1f1;
+	padding:2px;
+	text-align:left;
+}
+/* Ticker underlined lists */
+ul.underlineList {
+	list-style-type:none;
+	margin-bottom:1em;
+}
+ul.underlineList li {
+	border-bottom:1px solid #d8f0fc;
+	padding:.5em 0;
+	font:.7em arial,sans-serif;
+	list-style-type:none;
+	width:100%;
+}
+ul.underlineList li a {	
+	padding-right:1em;
+}
+/* Style for the track players page links*/
+.trackPlayerLinks{
+	display:none;
+}
+.trackPlayerLinksShow{
+	display:block;
+}
+.trackPlayerLinksShow{
+	font-size:.7em; 
+	position:absolute; 
+	top:7em; 
+	right:19em;
+	z-index:999;
+	}
+/* -- [ Video Pitch ] --------------------------------------------*/
+div#videoPitch {
+	background:transparent;
+	position:relative; /* Allows feedback to be absolutely positioned at bottom-right */
+}
+div.videoScreen {
+	float:left;
+	width:300px;
+	margin-right:0.75em;
+}
+div.videoScreen div{
+	text-align:right;
+	padding:1px;
+	background-color:#dedede;
+	border:1px solid #d0d0d0;
+}
+#mainContent .videoScreen p {
+	float:left;
+	margin:0.25em 0 0 0.5em;
+	font-size:0.7em;
+}
+div.videoDesc {
+	padding-top:0.5em;
+}
+#mainContent .videoDesc p {
+	line-height:1.25em;
+}
+#mainContent div.videoDesc p.kicker {
+	margin-bottom:0;
+}
+#mainContent div.videoDesc p.kicker img {
+	position:relative;
+	left:5px;
+	top:1px;
+}
+#mainContent .videoDesc h1 {
+	color:#000;
+	margin-top:0;
+	margin-bottom:0; /* IE6&7 will add the margin under div.videoScreen! */
+}
+div.playerData {
+	margin-bottom:.2em;
+	float:left;
+	width:21.27em; 
+	padding-right:.5em;
+	background-color:#EAF4FB;
+}
+div.playerData img.votigoPromo{
+	float:right;
+}
+.videoPromList{
+	float:left; 
+	padding:1em 2.3em; 
+	text-align:center;
+}
+div.playerData p{
+	width:14.5em; 
+	margin-left:1em; 
+	margin-top:1em; 
+	margin-bottom:.5em;
+}
+div.companyData {
+	margin-top:0.6em;
+	float:right;
+	width:9.5em;
+	padding-left:.5em;
+}
+#mainContent div.feedback {
+	position:absolute;
+	right:0;
+	bottom:0;
+	color:#8c8c8c;
+	margin-bottom:0.5em;
+	z-index:999;
+}
+#mainContent div.feedback p {
+	margin-bottom:0;
+	line-height:1.1em;
+}
+/* IE6 */
+#videoAg .description {
+ position:relative;
+ float:left;
+ width:16em;
+ margin:1em; 
+}
+html>body #videoAg .description {
+ width:18em;
+}
+#videoAg .description h2 {
+ font:bold 1em arial,sans-serif; 
+ color:#000;
+}
+#videoAg .description ul {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+#videoAg .description ul li {
+	font:bold .7em arial, sans-serif;
+	margin-bottom:.8em;
+}
+#videoAg div#videoList h3 {
+	background:#E1E7F2;
+	color:#4C6BA2;
+	padding:.5em;
+	text-align:left;
+}
+#videoAg div#videoList .thumb {
+	float:left;
+	margin:.9em;
+}
+#videoAg div#videoList .thumb p {
+	font-weight:bold;
+	padding-top:.3em;
+}
+#divBestWorst table.secondaryTable {
+	width:19.3em;
+}
+#divBestWorstMain table.movers {
+	width:18em;
+	float:left;
+}
+table.foolcaps {
+	margin-bottom: .5em;
+	width:100%;
+}
+table.foolcaps td {
+	padding: .45em .25em .25em .25em;
+}
+table.foolcaps td,
+table.foolcaps th {
+	width: 25%;
+	text-align: center;
+}
+.small{
+	font:normal 11px arial,sans-serif;
+	color:#999;
+	display:block;
+	padding-bottom:.4em;
+}
+.tickerMovement {
+	font:1.2em arial, sans-serif;
+	display:block;
+	position:relative;
+	float:right;
+	border:1px solid #eee;
+	padding:.1em;
+}
+.tickerMovement .price {
+	color:#000;
+	font-weight:bold;
+}
+.tickerMovement .change {
+	font-weight:bold;
+	font-size:.8em;
+}
+.tickerMovement .timestamp {
+	color:#666;
+	font-weight:normal;
+	font-size:.5em;
+	background:#eee;
+	text-align:right;
+	padding:0 .5em;	
+	margin-top:.2em;
+}
+body#contestPop {
+	padding:1em;
+}
+body#contestPop .innerDiv p {
+	font:bold .8em arial,sans-serif;
+}
+
+.getStartedImage {
+	margin:2px auto 0px auto;
+	padding:0;
+	width:175px;
+	height:203px
+}
+html>body .getStartedImage {
+	width:178px;
+}
+div#blogRoll .topTenListforTickers {
+	float:none;
+}

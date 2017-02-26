@@ -1,0 +1,345 @@
+body
+{
+background: #FFFFFF;
+color: #000000;
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+}
+
+/*nastavuje vsem prvkum defaultni text*/
+*
+{
+font-family: Verdana, Trebuchet MS, Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+font-size: 76%/140%;
+}
+
+/*text pro upozorneni, zvolen napr. u poctu novych prispevku v diskuzich*/
+.alert
+{
+color: #FF0000;
+}
+
+/*nastavuje defaultni styl vsem odkazum*/
+a
+{
+font-weight: normal;
+text-decoration: underlined;
+}
+
+/*nastavuje defaultni vzhled inputu typu button a submit*/
+input[type="button"], input[type="submit"]
+{
+background: #FFFFFF;
+color: #000000;
+height: 20px;
+font-weight: bold;
+font-size: 8pt;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+margin-left: 2px;
+margin-right: 2px;
+}
+
+/*nastavuje defaultni vzhled inputu typu text a password*/
+input[type="text"], input[type="password"]
+{
+background: #FFFFFF;
+color: #000000;
+height: 20px;
+font-weight: bold;
+font-size: 8pt;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+margin-top:2;
+margin-bottom:2;
+}
+
+/*nastavuje defaultni vzhled pro prvek textarea*/
+textarea
+{
+background: #FFFFFF;
+color: #000000;
+font-weight: bold;
+font-size: 8pt;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek select*/
+select
+{
+background: #FFFFFF;
+color: #000000;
+height: 18px;
+font-weight: bold;
+font-size: 8pt;
+border-width: 1px;
+border-color: #000000;
+border-style: solid;
+}
+
+/*nastavuje defaultni vzhled pro prvek option*/
+option
+{
+background: #7F8081;
+color: #FFFFFF;
+font-weight: bold;
+font-size: 8pt;
+}
+
+
+/*----------------------------------------------------------MAIN_MENU------------------------------------------------*/
+#main_menu
+{
+float:left;
+width:100%;
+background:#FFFFFF url("bg2.gif") repeat-x bottom;
+font-size:93%;
+line-height:normal;
+}
+
+#main_menu ul
+{
+margin:0;
+padding:10px 10px 0;
+list-style:none;
+}
+
+#main_menu li
+{
+float:left;
+background:url("left2.gif") no-repeat left top;
+margin:0;
+padding:0 0 0 9px;
+}
+
+#main_menu a
+{
+float:left;
+display:block;
+background:url("right2.gif") no-repeat right top;
+padding:5px 15px 4px 6px;
+text-decoration:none;
+font-weight:bold;
+color:#016AD5;
+}
+
+#main_menu a:hover
+{
+color:#0380FF;
+}
+
+#main_menu #current
+{
+background-image:url("left_on2.gif");
+}
+
+#main_menu #current a
+{
+background-image:url("right_on2.gif");
+color:#0380FF;
+padding-bottom:5px;
+}
+
+/*----------------------------------------------------------SUB_MENU------------------------------------------------*/
+#sub_menu
+{
+float:left;
+width:100%;
+background: #FFFFFF;
+font-size:93%;
+line-height:normal;
+}
+
+#sub_menu ul
+{
+margin:0;
+padding:10px 10px 0;
+list-style:none;
+}
+
+#sub_menu li
+{
+float:left;
+}
+
+#sub_menu a
+{
+float:left;
+display:block;
+text-decoration:none;
+font-weight:normal;
+color:#016AD5;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+#sub_menu a:hover
+{
+color:#0166CD;
+font-weight:bold;
+}
+
+#sub_menu #current a
+{
+color:#0166CD;
+font-weight:bold;
+}
+
+/*----------------------------------------------------------EDITOR------------------------------------------------*/
+.editor
+{
+background: #EDF5FD;
+border: 1px dashed #999;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+.editor_buttons_area
+{
+}
+
+.editor_input_area
+{
+padding: 2px 2px 2px 2px;
+
+}
+
+/*----------------------------------------------------------NAVIGATION------------------------------------------------*/
+.navigation
+{
+background: #CFEBF7;
+margin: 6px 6px 6px 6px;
+padding: 6px 6px 6px 6px;
+}
+
+input[type="submit"]#disabled
+{
+border: 1px solid #999;
+color: #999;
+}
+
+/*----------------------------------------------------------MESSAGE COUNTER-------------------------------------------*/
+
+#message_counter
+{
+border:1px dashed #999;
+}
+
+
+#message_counter p
+{
+text-align: center;
+}
+
+
+/*----------------------------------------------------------MESSAGE------------------------------------------------*/
+.message
+{
+}
+
+.message_right
+{
+margin:0px 10px 10px 60px;
+padding:5px;
+border:1px dashed #999;
+}
+
+.message_left
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:5px;
+border:1px dashed #999;
+line-height:11px;//zajisti umisteni level baru ihned pod ikonku uzivatele
+}
+
+
+.message_header
+{
+background: #77BAFF;
+}
+
+.message_content
+{
+margin-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.message_action
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.message_content p
+{
+margin:0px 0px 15px 0px;
+padding:0px;
+}
+
+
+
+/*---------------------------------------------------------USER ICON-------------------------------------------------*/
+#user_icon
+{
+width: 40px;
+height: 50px;
+}
+
+#level_bar
+{
+width: 40px;
+height: 10px;
+}
+
+/*----------------------------------------------------------NOTICEBOARD------------------------------------------------*/
+#noticeboard
+{
+margin:5px 5px 5px 5px;
+padding:5px 5px 5px 5px;
+border:1px dashed #999;
+}
+
+
+/*----------------------------------------------------------NOTICEBOARD------------------------------------------------*/
+.updated {
+background: #CFEBF7 url(notice.gif) no-repeat 1em ;
+border: 1px solid #2580B2;
+margin: 1em 5% 10px;
+padding: 0 1em 0 3em;
+}
+
+/*----------------------------------------------------------CONTENT DIVIDER--------------------------------------------*/
+.content_divider {
+background: #CFEBF7;
+}
+
+/*----------------------------------------------------------TOPICS--------------------------------------------*/
+.topic_background {
+background: #CFEBF7;
+margin: 2px 2px 2px 2px;
+}
+
+.subtopic_background {
+background: #AFEAF2;
+margin: 0px 2px 0px 2px;
+}
+
+
+
+
+
+
+
+
+

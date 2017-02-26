@@ -1,0 +1,843 @@
+/*----------------------------------------------------------GENERAL--------------------------------------------*/
+body
+{
+background: #F2F3F5;
+color: #000000;
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+}
+
+/*nastavuje vsem prvkum defaultni text*/
+*
+{
+font-family: Trebuchet MS, Arial CE, Helvetica CE, Arial, Helvetica, sans-serif;
+font-size: medium; 
+}
+
+p
+{
+/* display: inline; */ 
+}
+
+/*text pro upozorneni, zvolen napr. u poctu novych prispevku v diskuzich*/
+.alert
+{
+color: #FF5151;
+}
+
+/*nastavuje defaultni styl vsem odkazum*/
+a
+{
+color: #0000CC;
+font-weight: normal;
+text-decoration: underlined;
+}
+
+/*nastavuje defaultni styl vsem obrazkum*/
+img
+{
+border-width: 0px;
+}
+
+/* nastavuje wrap background pro cockpit, menu a submenu */
+#fixed
+{
+/* border:1px dashed #999; */
+background: #F2F3F5;
+}
+
+/* nastavuje vysku mezery mezi submenu a vlastnim obsahem prislusneho modulu */
+#sub_fixed
+{
+height:20px;
+}
+
+/*nastavuje defaultni vzhled inputu typu button a submit*/
+/*
+input[type="button"], input[type="submit"]
+{
+}
+
+input[type="submit"]#disabled
+{
+}
+*/
+
+/*nastavuje odlisny vzhled tlacitka odeslat*/
+input[name="send"]
+{
+font-weight: bold;
+margin-left: 2px;
+margin-right: 2px;
+}
+
+/*nastavuje defaultni vzhled inputu typu text a password*/
+/*
+input[type="text"], input[type="password"]
+{
+margin-top:2;
+margin-bottom:2;
+}
+*/
+
+/*nastavuje defaultni vzhled pro prvek textarea*/
+textarea
+{
+font-weight: bold;
+}
+
+/*nastavuje defaultni vzhled pro prvek select*/
+select
+{
+}
+
+/*nastavuje defaultni vzhled pro prvek option*/
+option
+{
+}
+
+
+
+/*----------------------------------------------------------COCKPIT--------------------------------------------*/
+#cockpit_background {
+background: #F2F3F5;
+}
+
+
+#cockpit_user_info {
+
+}
+
+#cockpit_content {
+background: #F2F3F5; 
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 6px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+height: 80px;
+}
+
+#cockpit_default
+{
+/* margin:0px 10px 10px 50px; */
+padding:5px;
+}
+
+/* floats to cockpit_default from left */
+#cockpit_logged_user 
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:2px;
+line-height:11px;/*zajisti umisteni level baru ihned pod ikonku uzivatele*/
+}
+
+#cockpit_clock
+{
+margin-left: 20px;
+margin-right: 5px;
+float: right;
+}
+
+/*floats to cockpit_default from right*/
+#cockpit_default_right 
+{
+}
+
+#cockpit_list {
+float: right;
+}
+
+#cockpit_list select, option
+{
+font-size: small;
+}
+
+#cockpit_content a
+{
+color: #000000;
+}
+
+.updated {
+background: #CFEBF7 url(notice.gif) no-repeat 1em ;
+border: 1px solid #2580B2;
+padding-left: 3em;
+width: 350px;
+}
+
+.updated p {
+color: #000000;
+}
+
+
+/*----------------------------------------------------------MAIN_MENU------------------------------------------------*/
+#main_menu
+{
+background: #F2F3F5;
+}
+
+#main_menu ul
+{
+margin-left: 0px;
+list-style:none;
+}
+
+#main_menu li
+{
+display:inline;
+background: #F2F3F5;
+padding-top: 6px;
+padding-bottom: 6px;
+padding-left: 4px;
+padding-right: 2px;
+margin-left: 2px;
+margin-right: 2px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+}
+
+#main_menu li:hover
+{
+background: #F2F3F5;
+}
+
+
+#main_menu a
+{
+text-decoration:none;
+font-weight:bold;
+color:#bababa;
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+#main_menu a:hover
+{
+color:#000000;
+}
+
+#main_menu #current
+{
+background: #F2F3F5;
+}
+
+#main_menu #current a
+{
+color:#000000;
+}
+
+/* lighter menu bottom using content background picture*/
+#main_menu_bottom
+{
+background:#FFFFFF;
+height: 0px;
+}
+
+/*----------------------------------------------------------SUB_MENU------------------------------------------------*/
+#sub_menu
+{
+background: #F2F3F5; 
+margin-left: 6px;
+margin-right: 15px;
+/* height: 20px; */
+border: 0px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+}
+
+#sub_menu ul
+{
+list-style:none;
+border-top: 1px solid #bababa; 
+}
+
+#sub_menu li
+{
+display:inline;
+/* padding: 2px 2px 2px 2px; */
+margin-left: 2px;
+margin-right: 2px;
+}
+
+#sub_menu a
+{
+text-decoration:none;
+font-weight:normal;
+color:#bababa;
+}
+
+#sub_menu a:hover
+{
+text-decoration:none;
+font-weight:bold;
+color:#000000;
+}
+
+#sub_menu #current a
+{
+text-decoration:none;
+font-weight:bold;
+color:#000000;
+}
+
+/*----------------------------------------------------------EDITOR------------------------------------------------*/
+.editor
+{
+margin: 2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+.editor_input_area
+{
+width: 800px;
+background: #F2F3F5;
+/* border: 1px dashed #999; */
+margin-top: 15px;
+margin-bottom: 0px;
+margin-right: 2px;
+margin-left: 6px;
+padding: 10px 4px 4px 4px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+}
+
+.editor_buttons_area
+{
+width: 800px;
+background:#F2F3F5;
+/* border:1px dashed #999; */
+margin-top: 0px;
+margin-bottom: 2px;
+margin-right: 2px;
+margin-left: 6px;
+padding: 4px 4px 4px 4px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+}
+
+.editor_buttons_area input[type="submit"]
+{
+font-size: small;
+}
+
+
+/*----------------------------------------------------------MESSAGE COUNTER-------------------------------------------*/
+
+#message_counter
+{
+background:#F2F3F5;
+margin-top: 2px;
+margin-bottom: 2px;
+margin-right: 15px;
+margin-left: 6px;
+padding: 4px 4px 4px 4px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+/* border:1px dashed #999; */
+}
+
+
+#message_counter p
+{
+font-size: small;
+font-weight: bold;
+text-align: center;
+}
+
+
+
+/*----------------------------------------------------------NAVIGATION------------------------------------------------*/
+.navigation
+{
+}
+
+#navigation_buttons
+{
+float: right;
+width: 400px;
+background: #F2F3F5;
+margin-top: 2px;
+margin-bottom: 2px;
+margin-right: 15px;
+margin-left: 6px;
+padding: 4px 4px 4px 4px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+/*border-top: 1px solid #bababa; */
+}
+
+#navigation_buttons input[type="submit"] 
+{
+font-size: small;
+}
+
+#navigation_buttons input[type="text"] 
+{
+font-size: small;
+width: 30px;
+}
+
+#navigation_buttons p
+{
+text-align: center;
+display: inline;
+}
+
+
+/*----------------------------------------------------------SELECTION-------------------------------------------*/
+#selection_buttons
+{
+width: 495px;
+background:#F2F3F5;
+margin-top: 2px;
+margin-bottom: 2px;
+margin-right: 2px;
+margin-left: 6px;
+padding: 4px 4px 4px 4px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+/*border-top: 1px solid #bababa; */
+}
+
+#selection_buttons input[type="submit"], input[type="button"]
+{
+font-size: small;
+}
+
+
+/*----------------------------------------------------------MESSAGE------------------------------------------------*/
+.message
+{
+}
+
+
+
+.message_left
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:5px;
+/* border:1px dashed #999; */
+line-height:11px; /*zajisti umisteni level baru ihned pod ikonku uzivatele*/
+}
+
+.message_right
+{
+margin:0px 10px 10px 50px;
+padding:5px;
+/* border:1px dashed #999; */ 
+}
+
+.message_header {
+/*background:#FFFFFF url("topic_background.gif") repeat-x bottom;*/
+background:#F2F3F5;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+
+border-bottom: 1px solid #bababa; 
+font-weight: bold;
+margin: 0px 0px 0px 0px;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 4px;
+padding-left: 4px;
+}
+
+.message_header_new {
+/*background:#FFFFFF url("message_header_new.gif") repeat-x bottom;*/
+background:#FFCEBE;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+/*
+border-top: 1px solid #FF8787;
+border-right: 1px solid #FF5151;
+border-left: 1px solid #FF5151;
+border-bottom: 1px solid #FF5151;
+*/
+margin: 0px 0px 0px 0px;
+padding-top: 2px;
+padding-bottom: 2px;
+padding-right: 4px;
+padding-left: 4px;
+}
+
+.message_content
+{
+margin-left: 0px; 
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 4px;
+padding-left: 4px;
+background: #F2F3F5; 
+}
+
+.message_action
+{
+padding-top: 1px;
+padding-bottom: 1px;
+padding-right: 4px;
+padding-left: 4px;
+background: #F2F3F5;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+/* border-top: 1px solid #bababa; */
+}
+
+.message_content p
+{
+margin-left: 0px; /* ovlivnuje posunuti textu doprava/doleva nefunguje */
+margin-top: 0px;
+padding:0px;
+display: inline; 
+}
+
+.message_action a
+{
+font-size: small;
+}
+
+
+
+/*---------------------------------------------------------USER ICON-------------------------------------------------*/
+.user_icon
+{
+width: 40px;
+height: 50px;
+}
+
+.level_bar
+{
+width: 40px;
+height: 10px;
+}
+
+
+/*----------------------------------------------------------DISCUSSION INFO------------------------------------------------*/
+#discussion_info
+{
+background: #FFFFD3;
+margin-left: 6px;
+margin-right: 15px;
+padding-left: 5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+}
+
+#discussion_name
+{
+font-size: 120%;
+}
+
+/*----------------------------------------------------------NOTICEBOARD------------------------------------------------*/
+#noticeboard_header
+{
+font-size: 120%;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+background:#C3D9FF;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 15px;
+padding-left: 5px;
+}
+
+#noticeboard_content
+{
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+background: #EBEBEB;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 0px;
+padding-left: 5px;
+border:1px solid #EBEBEB;
+}
+
+/*----------------------------------------------------------CONTENT DIVIDER--------------------------------------------*/
+.content_divider {
+background: #F2F3F5;
+}
+
+/*----------------------------------------------------------TOPICS--------------------------------------------*/
+.topic {
+/* background:#FFFFFF url("topic_background.gif") repeat-x bottom; */
+background:#F2F3F5;
+font-weight: normal;
+margin: 2px 2px 2px 2px;
+height: 35px;
+}
+
+.subtopic {
+/* background:#FFFFFF url("subtopic_background.gif") repeat-x bottom; */
+background:#F2F3F5;
+font-weight: normal;
+margin: 2px 2px 2px 2px;
+height: 20px;
+border-bottom: 1px solid #bababa; 
+}
+
+.edit_subtopic {
+/* background:#FFFFFF url("subtopic_background.gif") repeat-x bottom; */
+background:#F2F3F5;
+font-weight: normal;
+margin: 2px 2px 2px 2px;
+height: 130px;
+
+}
+
+.discussion {
+/* background:#FFFFFF url("item_background.gif") repeat-x bottom; */
+border-width: 0px;
+/*
+border-top: 1px solid #6F7CA2;
+border-right: 1px solid #6F7CA2;
+border-left: 1px solid #6F7CA2;
+border-bottom: 1px solid #6F7CA2;
+*/
+height: 40px;
+margin: 2px 2px 2px 2px;
+}
+
+/*----------------------------------------------------------BOOKMARKS--------------------------------------------*/
+.bookmark_header {
+font-size: 120%;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+background:#F2F3F5;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 15px;
+padding-left: 5px;
+border-bottom: 1px solid #bababa; 
+}
+
+.bookmark_content {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+background: #F2F3F5;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 5px;
+padding-left: 5px;
+padding-top: 2px;
+height: 30px;
+}
+
+.bookmark_button {
+float: left;
+margin-right: 10px;
+}
+
+.bookmark_button input[type="submit"] { 
+font-size: small;
+}
+
+
+/*----------------------------------------------------------SYSTEM_STATISTICS--------------------------------------------*/
+#statistics_info
+{
+background: #F2F3F5;
+margin-left: 6px;
+margin-right: 15px;
+padding-left: 5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+}
+
+.statistics_header {
+background:#F2F3F5;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+font-weight: bold;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 15px;
+padding-left: 5px;
+border-bottom: 1px solid #bababa; 
+}
+
+.statistics_content {
+background: #F2F3F5;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 0px;
+padding-left: 5px;
+}
+
+
+/*----------------------------------------------------------SYSTEM_INFORMATION--------------------------------------------*/
+.information_header {
+background:#F2F3F5;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+font-weight: bold;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 15px;
+padding-left: 5px;
+border-bottom: 1px solid #bababa; 
+}
+
+.information_content {
+background: #F2F3F5;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 0px;
+padding-left: 5px;
+}
+
+
+/*----------------------------------------------------------FOOTER--------------------------------------------*/
+#footer {
+/*background:#FFFFFF url("footer_background.gif") repeat-x bottom;*/
+background:#FFFFFF
+height:80px;
+}
+
+#footer p
+{
+color: #999999;
+text-align: center;
+}
+
+#footer a
+{
+color: #333399;
+text-decoration:none;
+}
+
+/*----------------------------------------------------------USERSLIST--------------------------------------------*/
+.userslist_right
+{
+margin:0px 10px 10px 50px;
+padding:5px;
+/* border:1px dashed #999; */
+}
+
+.userslist_left
+{
+float: left;
+top:10px;
+left:20px;
+width:40px;
+height:60px;
+padding:5px;
+/*border:1px dashed #999;*/
+line-height:11px;/*zajisti umisteni level baru ihned pod ikonku uzivatele*/
+}
+
+.userslist_header {
+/* background:#FFFFFF url("topic_background.gif") repeat-x bottom; */
+background:#F2F3F5;
+/*
+border-top: 1px solid #A1A6D9;
+border-right: 1px solid #7B81A9;
+border-left: 1px solid #7B81A9;
+border-bottom: 1px solid #7B81A9;*/
+margin: 0px 0px 0px 0px;
+height:20px;
+border-bottom: 1px solid #bababa; 
+}
+
+.userslist_content
+{
+margin-left: 0px;
+padding-top: 5px;
+padding-bottom: 5px;
+/*background: #C6E9FD;*/
+}
+
+.userslist_action
+{
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.userslist_content p
+{
+margin-left: 5px;
+margin-top: 0px;
+padding:0px;
+}
+
+/*----------------------------------------------------------SETTINGS--------------------------------------------*/
+.settings_header {
+margin:2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+border-bottom: 1px solid #bababa;
+}
+
+.settings_content {
+margin:2px 2px 2px 2px;
+padding: 2px 2px 2px 2px;
+}
+
+/*----------------------------------------------------------NEW DISCUSSION--------------------------------------------*/
+.new_discussion {
+margin:2px 2px 2px 2px;
+padding: 8px 8px 8px 8px;
+border-bottom:1px dashed #999;
+}
+
+/*----------------------------------------------------------USER LOGS--------------------------------------------*/
+.user_logs {
+margin:2px 2px 2px 2px;
+padding: 8px 8px 8px 8px;
+border-bottom:1px dashed #999;
+}
+
+/*----------------------------------------------------------HELP--------------------------------------------*/
+.help_header {
+background:#F2F3F5;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+font-weight: bold;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 15px;
+padding-left: 5px;
+border-bottom: 1px solid #bababa; 
+}
+
+.help_content {
+background: #F2F3F5;
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+margin-left: 6px;
+margin-right: 15px;
+margin-top: 0px;
+padding-left: 5px;
+padding-right: 5px;
+text-align: justify;
+}
