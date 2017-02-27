@@ -1,7 +1,5 @@
 # talker-reloaded
-Remastered version of 15 years old discussion server based on LAMP
-
-Fifteen years ago, I started working on my biggest project ever. It took me 5 years to get it to its final state before I left it untouched in my archive for almost 10 years.
+Sixteen years ago, I started working on my biggest project ever. It took me 5 years to get it to its final state before I left it untouched in my archive for almost 10 years.
 
 Now it's time to bring it back to life. Not because it has any real chance against Facebook, but because it can work well for teaching purposes. I want to update it and make it work again with the latest PHP and MySQL. I don't even know how much work it will be or if I will be able to revive it or not.
 
