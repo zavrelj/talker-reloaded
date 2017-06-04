@@ -16,7 +16,7 @@ $fuserid_orig = $fuserid;
 
 
 <div>
-      <input name="refresh" type="submit" value="aktualizovat" accesskey="r" title="pro aktualizaci stránky lze také použít ALT+R">
+      <input name="refresh" type="submit" value="<? echo $LNG_REFRESH; ?>" accesskey="r" title="pro aktualizaci stránky lze také použít ALT+R">
 </div>
 <? $navigation_id=31 ?>
 <? include('incl/navigation.php'); ?>

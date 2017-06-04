@@ -97,6 +97,8 @@ $LNG_STATUS_OWN = "own";
 //TEXT_AREA
 $LNG_SEND = "send";
 $LNG_PREVIEW = "preview";
+$LNG_REFRESH = "refresh";
+$LNG_SHOW = "show";
 
 //AUTOMATICALLY GENERATED MAILBOX MESSAGES
 $LNG_DISCUSSION_OWNERSHIP = "THIS IS AUTOMATICALLY GENERATED MESSAGE<br>The sender of this message gave you his discussion";
@@ -222,86 +224,86 @@ $LNG_TOPICS_ADD_SUBCATEGORY = "add new subcategory";
 
 //DEPRECATED------------------------------------------------------------------------------------------------------
 //TOPICS
-$LNG_TOPIC_0 = "SYSTÉM OPENTCZ";
-$LNG_TOPIC_1 = "AKTUÁLNÌ";
+$LNG_TOPIC_0 = "SYSTï¿½M OPENTCZ";
+$LNG_TOPIC_1 = "AKTUï¿½LNï¿½";
 $LNG_TOPIC_2 = "AUDIO A VIDEO";
-$LNG_TOPIC_3 = "CESTOVÁNÍ";
+$LNG_TOPIC_3 = "CESTOVï¿½Nï¿½";
 $LNG_TOPIC_4 = "DROGY";
 $LNG_TOPIC_5 = "FILM A TELEVIZE";
-$LNG_TOPIC_6 = "GRAFICKÁ TVORBA";
+$LNG_TOPIC_6 = "GRAFICKï¿½ TVORBA";
 $LNG_TOPIC_7 = "HARDWARE A KOMUNIKACE";
 $LNG_TOPIC_8 = "HISTORIE";
 $LNG_TOPIC_9 = "HRY";
 $LNG_TOPIC_10 = "HUDBA";
 $LNG_TOPIC_11 = "INTERNET";
-$LNG_TOPIC_12 = "KULTURA A UMÌNÍ";
+$LNG_TOPIC_12 = "KULTURA A UMï¿½Nï¿½";
 $LNG_TOPIC_13 = "LITERATURA";
-$LNG_TOPIC_14 = "MÓDA A STYL";
+$LNG_TOPIC_14 = "Mï¿½DA A STYL";
 $LNG_TOPIC_15 = "MOTORISMUS A DOPRAVA";
 $LNG_TOPIC_16 = "POLITIKA A EKONOMIKA";
-$LNG_TOPIC_17 = "PØÍRODA";
-$LNG_TOPIC_18 = "SOFTWARE A PROGRAMOVÁNÍ";
-$LNG_TOPIC_19 = "SPOLEÈNOST";
-$LNG_TOPIC_20 = "VÌDA A TECHNIKA";
-$LNG_TOPIC_21 = "VÍRA";
-$LNG_TOPIC_22 = "VZDÌLÁNÍ";
+$LNG_TOPIC_17 = "Pï¿½ï¿½RODA";
+$LNG_TOPIC_18 = "SOFTWARE A PROGRAMOVï¿½Nï¿½";
+$LNG_TOPIC_19 = "SPOLEï¿½NOST";
+$LNG_TOPIC_20 = "Vï¿½DA A TECHNIKA";
+$LNG_TOPIC_21 = "Vï¿½RA";
+$LNG_TOPIC_22 = "VZDï¿½Lï¿½Nï¿½";
 $LNG_TOPIC_23 = "VZTAHY A SEX";
-$LNG_TOPIC_24 = "ZÁBAVA A ZÁJMY";
-$LNG_TOPIC_25 = "ZDRAVÍ A SPORT";
+$LNG_TOPIC_24 = "Zï¿½BAVA A Zï¿½JMY";
+$LNG_TOPIC_25 = "ZDRAVï¿½ A SPORT";
 $LNG_TOPIC_26 = "CHAT";
-$LNG_TOPIC_27 = "OSTATNÍ";
+$LNG_TOPIC_27 = "OSTATNï¿½";
 
 //SUBTOPICS
-$LNG_SUBTOPIC_0_0 = "nezaøazené";
-$LNG_SUBTOPIC_0_1 = "systémové";
+$LNG_SUBTOPIC_0_0 = "nezaï¿½azenï¿½";
+$LNG_SUBTOPIC_0_1 = "systï¿½movï¿½";
 $LNG_SUBTOPIC_0_2 = "diskuze";
 
-$LNG_SUBTOPIC_1_0 = "nezaøazené";
-$LNG_SUBTOPIC_1_1 = "aktuální názory";
-$LNG_SUBTOPIC_1_2 = "aktuální názory";
+$LNG_SUBTOPIC_1_0 = "nezaï¿½azenï¿½";
+$LNG_SUBTOPIC_1_1 = "aktuï¿½lnï¿½ nï¿½zory";
+$LNG_SUBTOPIC_1_2 = "aktuï¿½lnï¿½ nï¿½zory";
 
-$LNG_SUBTOPIC_2_0 = "nezaøazené";
+$LNG_SUBTOPIC_2_0 = "nezaï¿½azenï¿½";
 $LNG_SUBTOPIC_2_1 = "videa";
 $LNG_SUBTOPIC_2_2 = "projektory";
 $LNG_SUBTOPIC_2_3 = "walkmany";
 $LNG_SUBTOPIC_2_4 = "reproduktory";
 
-$LNG_SUBTOPIC_3_0 = "nezaøazené";
-$LNG_SUBTOPIC_3_1 = "národy";
+$LNG_SUBTOPIC_3_0 = "nezaï¿½azenï¿½";
+$LNG_SUBTOPIC_3_1 = "nï¿½rody";
 $LNG_SUBTOPIC_3_2 = "turistika";
-$LNG_SUBTOPIC_3_3 = "výlety";
+$LNG_SUBTOPIC_3_3 = "vï¿½lety";
 $LNG_SUBTOPIC_3_4 = "expedice";
 
-$LNG_SUBTOPIC_4_0 = "nezaøazené";
-$LNG_SUBTOPIC_4_1 = "legální";
-$LNG_SUBTOPIC_4_2 = "nelegální";
+$LNG_SUBTOPIC_4_0 = "nezaï¿½azenï¿½";
+$LNG_SUBTOPIC_4_1 = "legï¿½lnï¿½";
+$LNG_SUBTOPIC_4_2 = "nelegï¿½lnï¿½";
 $LNG_SUBTOPIC_4_3 = "druhy";
-$LNG_SUBTOPIC_4_4 = "úèinky";
-$LNG_SUBTOPIC_4_5 = "zku‘enosti";
-$LNG_SUBTOPIC_4_6 = "varování";
+$LNG_SUBTOPIC_4_4 = "ï¿½ï¿½inky";
+$LNG_SUBTOPIC_4_5 = "zkuï¿½enosti";
+$LNG_SUBTOPIC_4_6 = "varovï¿½nï¿½";
 
-$LNG_SUBTOPIC_SYSTEM = "kino, video, televizní poøady";
+$LNG_SUBTOPIC_SYSTEM = "kino, video, televiznï¿½ poï¿½ady";
 $LNG_SUBTOPIC_SYSTEM = "komiks, fotografie, 2D a 3D aplikace";
-$LNG_SUBTOPIC_SYSTEM = "platformy, notebooky, konzole, komponenty, telefony, PDA, datové pøenosy";
-$LNG_SUBTOPIC_SYSTEM = "svìtová, èeská, názory";
-$LNG_SUBTOPIC_SYSTEM = "karetní, deskové, poèítaèové, konzolové, online hry, ostatní";
-$LNG_SUBTOPIC_SYSTEM = "skupiny, mp3, vlastní tvorba, hudební žánry";
-$LNG_SUBTOPIC_SYSTEM = "webové prezentace, diskuzní servery, e-shopy, portály";
-$LNG_SUBTOPIC_SYSTEM = "malíøství, sochaøství, divadlo";
-$LNG_SUBTOPIC_SYSTEM = "poezie, romány, povídky, spisovatelé";
-$LNG_SUBTOPIC_SYSTEM = "módní trendy, oblékání, obuv, úèesy, kosmetika";
-$LNG_SUBTOPIC_SYSTEM = "automobily, motocykly, letadla, lodì, stavební a vojenská technika";
-$LNG_SUBTOPIC_SYSTEM = "èeská, svìtová, názory, události, komentáøe";
-$LNG_SUBTOPIC_SYSTEM = "vesmír, Zemì, katastrofy, fauna, flóra";
-$LNG_SUBTOPIC_SYSTEM = "aplikace, operaèní systémy, programovací jazyky, skriptování, databáze";
-$LNG_SUBTOPIC_SYSTEM = "spoleèenské vìdy a témata, mytologie, mystika, filozofie, právo";
-$LNG_SUBTOPIC_SYSTEM = "pøírodní a formální vìdy, vynálezy, objevy, technické novinky";
-$LNG_SUBTOPIC_SYSTEM = "náboženství, záhady, nevysvìtlitelné jevy";
-$LNG_SUBTOPIC_SYSTEM = "studium, problémy, výbìr ‘koly, rady, názory";
-$LNG_SUBTOPIC_SYSTEM = "rodina, pøátelé, partneøi, láska, city, erotika";
-$LNG_SUBTOPIC_SYSTEM = "párty, setkání, tanec, modeláøství, ‘achy, fotografování";
-$LNG_SUBTOPIC_SYSTEM = "fotbal, hokej, posilování, plavání, cyklistika, bojová umìní, ostatní";
-$LNG_SUBTOPIC_SYSTEM = "diskuze pro nezávazná témata";
-$LNG_SUBTOPIC_SYSTEM = "tématicky nezaøazené diskuze";
+$LNG_SUBTOPIC_SYSTEM = "platformy, notebooky, konzole, komponenty, telefony, PDA, datovï¿½ pï¿½enosy";
+$LNG_SUBTOPIC_SYSTEM = "svï¿½tovï¿½, ï¿½eskï¿½, nï¿½zory";
+$LNG_SUBTOPIC_SYSTEM = "karetnï¿½, deskovï¿½, poï¿½ï¿½taï¿½ovï¿½, konzolovï¿½, online hry, ostatnï¿½";
+$LNG_SUBTOPIC_SYSTEM = "skupiny, mp3, vlastnï¿½ tvorba, hudebnï¿½ ï¿½ï¿½nry";
+$LNG_SUBTOPIC_SYSTEM = "webovï¿½ prezentace, diskuznï¿½ servery, e-shopy, portï¿½ly";
+$LNG_SUBTOPIC_SYSTEM = "malï¿½ï¿½stvï¿½, sochaï¿½stvï¿½, divadlo";
+$LNG_SUBTOPIC_SYSTEM = "poezie, romï¿½ny, povï¿½dky, spisovatelï¿½";
+$LNG_SUBTOPIC_SYSTEM = "mï¿½dnï¿½ trendy, oblï¿½kï¿½nï¿½, obuv, ï¿½ï¿½esy, kosmetika";
+$LNG_SUBTOPIC_SYSTEM = "automobily, motocykly, letadla, lodï¿½, stavebnï¿½ a vojenskï¿½ technika";
+$LNG_SUBTOPIC_SYSTEM = "ï¿½eskï¿½, svï¿½tovï¿½, nï¿½zory, udï¿½losti, komentï¿½ï¿½e";
+$LNG_SUBTOPIC_SYSTEM = "vesmï¿½r, Zemï¿½, katastrofy, fauna, flï¿½ra";
+$LNG_SUBTOPIC_SYSTEM = "aplikace, operaï¿½nï¿½ systï¿½my, programovacï¿½ jazyky, skriptovï¿½nï¿½, databï¿½ze";
+$LNG_SUBTOPIC_SYSTEM = "spoleï¿½enskï¿½ vï¿½dy a tï¿½mata, mytologie, mystika, filozofie, prï¿½vo";
+$LNG_SUBTOPIC_SYSTEM = "pï¿½ï¿½rodnï¿½ a formï¿½lnï¿½ vï¿½dy, vynï¿½lezy, objevy, technickï¿½ novinky";
+$LNG_SUBTOPIC_SYSTEM = "nï¿½boï¿½enstvï¿½, zï¿½hady, nevysvï¿½tlitelnï¿½ jevy";
+$LNG_SUBTOPIC_SYSTEM = "studium, problï¿½my, vï¿½bï¿½r ï¿½koly, rady, nï¿½zory";
+$LNG_SUBTOPIC_SYSTEM = "rodina, pï¿½ï¿½telï¿½, partneï¿½i, lï¿½ska, city, erotika";
+$LNG_SUBTOPIC_SYSTEM = "pï¿½rty, setkï¿½nï¿½, tanec, modelï¿½ï¿½stvï¿½, ï¿½achy, fotografovï¿½nï¿½";
+$LNG_SUBTOPIC_SYSTEM = "fotbal, hokej, posilovï¿½nï¿½, plavï¿½nï¿½, cyklistika, bojovï¿½ umï¿½nï¿½, ostatnï¿½";
+$LNG_SUBTOPIC_SYSTEM = "diskuze pro nezï¿½vaznï¿½ tï¿½mata";
+$LNG_SUBTOPIC_SYSTEM = "tï¿½maticky nezaï¿½azenï¿½ diskuze";
 //DEPRECATED------------------------------------------------------------------------------------------------------
 ?>

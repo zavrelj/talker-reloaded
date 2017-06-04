@@ -22,9 +22,9 @@ $destroy_pool = $_POST['destroy_pool'];
 $privateArray = _oxQuery("SELECT private FROM $TABLE_ROOMS WHERE roomid='$roomid'");
 $is_private = $privateArray["private"];
 if ($is_private != 0) {
-	$sess_out = updatelastaction($userid, "privátní diskuzi v anketì");
+	$sess_out = updatelastaction($userid, "privï¿½tnï¿½ diskuzi v anketï¿½");
 }else{
-	$sess_out = updatelastaction($userid, $roomid.";v anketì");
+	$sess_out = updatelastaction($userid, $roomid.";v anketï¿½");
 }
 
 $result=_oxResult("SELECT name, founderid FROM $TABLE_ROOMS WHERE roomid=$roomid");
@@ -52,7 +52,7 @@ if($vote == hlasovat && $db_passwd == $session_passwd) {
 }
 
 
-if ($create_pool == vytvoøit && $db_passwd == $session_passwd) {
+if ($create_pool == vytvoï¿½it && $db_passwd == $session_passwd) {
 
 	$result=_oxResult("SELECT pool_id FROM $TABLE_POOLS WHERE roomid=$roomid AND archive=0");
 	$record=mysql_fetch_array($result);
@@ -168,7 +168,7 @@ if (mysql_num_rows($deniers_result) != 0) {
 		<div>
                   <input type="radio" value="<? echo $i; ?>" name="pool_radio" <? if($i==0) {?> checked="checked" <?}?> >
 		      <? $num = $i+1; echo $num.". ".$answ_arr[$i]."&nbsp;&nbsp;&nbsp;[".$answ_val_arr[$i]."]"; ?>
-		</div>      
+		</div>
       <? } ?>
 
 	<? if ($votted != 1) {?>
@@ -180,7 +180,7 @@ if (mysql_num_rows($deniers_result) != 0) {
 
 <? if ($public_answ !=0 && $voters_num-1 !=0) {?>
 
-detailní výsledky
+detailnï¿½ vï¿½sledky
 <? $j=0;?>
 <? for ($i=0; $i<=$voters_num-2; $i++) { ?>
 <? $j++ ?>
@@ -196,7 +196,7 @@ detailní výsledky
 <? if ($archive_num_rows != 0) {?>
 <form action="gate.php?m=10&s=2" method="post">
 	<input type="hidden" name="roomid" value="<?echo $roomid?>">
-	<input type="submit" name="archive" value="zobrazit archiv anket">
+	<input type="submit" name="archive" value="<? echo $LNG_SHOW; ?> archiv anket">
 </form>
 <? } ?>
 
@@ -252,4 +252,3 @@ detailní výsledky
 			?>
 			<!-- tady se bude pripadne zobrazovat archiv anket -->
 <? } ?>
-

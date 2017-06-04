@@ -2,26 +2,26 @@
 		<tr>
 			<td>
 				<noscript>
-					seznam použitelných kódù:
-					1. [url][/url] pro vložení odkazu<br>
-					2. [img][/img] pro vložení obrázku<br>
-					3. [u][/u] pro vložení podtrženého textu
+					seznam pouï¿½itelnï¿½ch kï¿½dï¿½:
+					1. [url][/url] pro vloï¿½enï¿½ odkazu<br>
+					2. [img][/img] pro vloï¿½enï¿½ obrï¿½zku<br>
+					3. [u][/u] pro vloï¿½enï¿½ podtrï¿½enï¿½ho textu
 
 					<? if ($edit_module == 0) { ?>
 						<!-- Puvodne dochazelo po zobrazeni nahledu k vymazani viewingu ($viewing=0),
 						coz se ale provedlo i pokud je Javascript zapnuty a proto nasledne nefugnoval
 						nahled v kodu nize, proto bylo vymazavani viewingu odstraneno, hodnota bude
 						stejne vynulovana pri zacatku behu skriptu - doufam... //-->
-						<textarea name="message_content" rows="7" cols="95"><? if ($preview==$LNG_PREVIEW || $refresh== 'aktualizovat') {echo stripslashes($uncheckedMessageContent); }?></textarea>
+						<textarea name="message_content" rows="7" cols="95"><? if ($preview==$LNG_PREVIEW || $refresh== $LNG_REFRESH) {echo stripslashes($uncheckedMessageContent); }?></textarea>
 					<? } ?>
 					<? if ($edit_module == 1) { ?>
                         <!-- EDITACNI OKNO //-->
 						<? if ($allowritevalue != 1 && $userid != $auditor && $userid != $allower) { ?>
-							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>DISKUZE JE POUZE PRO ÈTENÍ, VKLÁDAT PØÍSPÌVKY MÙŽE POUZE VLASTNÍK</textarea>
+							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>DISKUZE JE POUZE PRO ï¿½TENï¿½, VKLï¿½DAT Pï¿½ï¿½SPï¿½VKY MÙŽE POUZE VLASTNï¿½K</textarea>
 						<? }elseif ($banned_wryiter == $userid && $userid != $auditor && $userid != $allower) { ?>
-							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>MÁTE ZÁKAZ ZÁPISU DO DISKUZE, KONTAKTUJTE VLASTNÍKA</textarea>
+							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>Mï¿½TE Zï¿½KAZ Zï¿½PISU DO DISKUZE, KONTAKTUJTE VLASTNï¿½KA</textarea>
 						<? }else{ ?>
-							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input"><? if ($preview==$LNG_PREVIEW || $refresh== 'aktualizovat') {echo stripslashes($uncheckedMessageContent);}?></textarea>
+							<textarea name="formMessageContent" rows="7" cols="95" class="editor_input"><? if ($preview==$LNG_PREVIEW || $refresh== $LNG_REFRESH) {echo stripslashes($uncheckedMessageContent);}?></textarea>
 						<? } ?>
 						<!-- EDITACNI OKNO //-->
 					<? } ?>
@@ -38,11 +38,11 @@
 				<? if ($edit_module == 1) { ?>
 					<!-- EDITACNI OKNO //-->
 					<? if ($allowritevalue != 1 && $userid != $auditor && $userid != $allower) { ?>
-						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>DISKUZE JE POUZE PRO ÈTENÍ, VKLÁDAT PØÍSPÌVKY MÙŽE POUZE VLASTNÍK</textarea>
+						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>DISKUZE JE POUZE PRO ï¿½TENï¿½, VKLï¿½DAT Pï¿½ï¿½SPï¿½VKY MÙŽE POUZE VLASTNï¿½K</textarea>
 					<? }elseif ($banned_wryiter == $userid && $userid != $auditor && $userid != $allower) { ?>
-						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>MÁTE ZÁKAZ ZÁPISU DO DISKUZE, KONTAKTUJTE VLASTNÍKA</textarea>
+						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input" DISABLED>Mï¿½TE Zï¿½KAZ Zï¿½PISU DO DISKUZE, KONTAKTUJTE VLASTNï¿½KA</textarea>
 					<? }else{ ?>
-						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input"><? if ($preview==$LNG_PREVIEW || $refresh== 'aktualizovat') {echo stripslashes($uncheckedMessageContent);}?></textarea>
+						<textarea name="formMessageContent" rows="7" cols="95" class="editor_input"><? if ($preview==$LNG_PREVIEW || $refresh== $LNG_REFRESH) {echo stripslashes($uncheckedMessageContent);}?></textarea>
 					<? } ?>
 					<!-- EDITACNI OKNO //-->
 				<? } ?>
@@ -50,8 +50,8 @@
 
 					<? //echo "wrong_editor: ".$wrong_editor."<br>"; ?>
 					<? if ($wrong_editor == 1) { ?>
-						TEXT, který se pokousíte editovat nebyl napsán ve WYSIWYG editoru, z tohoto dùvodu není možné text editovat.<br>
-						POKUD chcete text editovat, musíte zvolit v NASTAVENÍ typ editoru PLAINTEXT!
+						TEXT, kterï¿½ se pokousï¿½te editovat nebyl napsï¿½n ve WYSIWYG editoru, z tohoto dï¿½vodu nenï¿½ moï¿½nï¿½ text editovat.<br>
+						POKUD chcete text editovat, musï¿½te zvolit v NASTAVENï¿½ typ editoru PLAINTEXT!
 					<? }else{ ?>
 						<textarea name="formMessageContent" rows="20" cols="100"><? echo stripslashes($uncheckedMessageContent); ?></textarea>
 					<? } ?>

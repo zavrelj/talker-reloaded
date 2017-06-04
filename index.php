@@ -1,8 +1,8 @@
 <?
 
-if ($_SERVER['HTTP_HOST']=='g3n.us') {
-  header("location: http://www.g3n.us/");  
-}
+//if ($_SERVER['HTTP_HOST']=='g3n.us') {
+  //header("location: http://www.g3n.us/");
+//}
 
 header("Pragma: no-cache");
 header("Cache-Control: no-cache");
@@ -37,7 +37,7 @@ if (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== FALSE) {
    echo '<p>Internet Explorer a další prohlížeče lze v případě nutnosti používat, přesto doporučujeme pro plné využití všech možností systému právě Firefox.</p>';
 }
 */
- 
+
 
 //$main_style=rand(1, 3);
 //echo "this is something new";
@@ -62,32 +62,32 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
             <script type="text/javascript" src="script/overlay/prototype.js"></script>
             <script type="text/javascript" src="script/overlay/lightbox.js"></script>
             <script type="text/javascript" src="script/overlay/warningoverlay.js"></script>
-                        
+
             <script language="javascript" type="text/javascript">
             <!--
-            	
-                  var myGlobalHandlers = 
+
+                  var myGlobalHandlers =
             	{
             		onCreate: function()
             		{
             			Element.show('systemWorking');
             			document.body.style.cursor = 'wait';
             		},
-            		onComplete: function() 
-            		{	
+            		onComplete: function()
+            		{
             			if(Ajax.activeRequestCount == 0)
             			{
             				Element.hide('systemWorking');
             				document.body.style.cursor = 'default';
             			}
             		},
-            		onFailure: function() 
+            		onFailure: function()
             		{
             			alert('Sorry. There was an error processing your request.');
             		}
             	};
-            	
-                       	
+
+
             	var currentBaseUrl = 'http://ds.zavrel.net/';
             //-->
             </script>
@@ -97,8 +97,8 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <body>
 	<div id="topbar">
             <img src="imgs/ds_logo.png">
-                 
-            
+
+
             <div id="login">
                   <form name="loginForm" method="post" action="logger.php">
                   <label><? echo $LNG_MAINPAGE_USERNAME_LABEL; ?></label>
@@ -108,49 +108,49 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
                   <input name="login" type="submit" value="<? echo $LNG_MAINPAGE_LOGIN_SUBMIT; ?>">
       		        </form>
             </div>
-          
-          
+
+
            <br />
            <!-- <a href="http://www.getfirefox.com"><p style="margin-left:20px">If you're havin' IE problems, I feel bad for you, son - I got 99 problems but the bitch ain't one.</p></a> //-->
            <p class="footer">
                   <a href="newuser.php">registrace</a> | <a href="http://ds.zavrel.net">blog</a> | &copy; DS 2010
            </p>
-          
-          
+
+
           <?
       			 $note = $_GET["note"];
       			 if ($note != null){
       			     $note_text = _oxNoter($note);
-      			     
+
       		           ?>
                              <!-- <noscript> //-->
                              <div>UPOZORNĚNÍ: <? echo $note_text; ?></div>
                              <!-- </noscript> //-->
-                             
+
                              <!--
                              <script language="javascript" type="text/javascript">
-                             
+
                               showNewPlayerLightbox('<?echo $note; ?>');
-                             
+
                              </script>
                              //-->
-                                                          
-                             
+
+
                   <? } ?>
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-                  
-      
-           
-          
-                 
-    
-      </div>	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
 </body>
 </html>

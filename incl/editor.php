@@ -13,14 +13,14 @@
 <div class="editor_input_area">
 	<? /* naplneno aktualni hodnotou CSS pro pouziti v javascriptu */ ?>
       <input type="hidden" name="css" value="<? echo $css; ?>">
-      
+
       <!-- RAW_PLAIN_TEXT //-->
 	<? if ($editor == 0) { ?>
-	     
+
             <div>
                   <!--<a href="http://docs.oxyy.org/index.php/Seznam_speci%C3%A1ln%C3%ADch_znak%C5%AF" target="new"><? echo $LNG_EDITOR_HOWTO; ?></a>//-->
             </div>
-            
+
 
 		<? if ($edit_module == 0) { ?>
 			<?
@@ -148,12 +148,12 @@
 			[<a href="#" onClick="tag(2)">vloľit obrázek<noscript><? echo $LNG_JAVASCRIPT_REQUIRED; ?></noscript></a>]
 		</div>
 		<!-- JAVASCRIPT ENHANCEMENT//-->
-		
-		
+
+
             <div>
                   <!--<a href="http://docs.oxyy.org/index.php/Seznam_speci%C3%A1ln%C3%ADch_znak%C5%AF" target="new"><? echo $LNG_EDITOR_HOWTO; ?></a>//-->
             </div>
-            
+
             <? if ($edit_module == 0) { ?>
 			<?
 			if ($receiver==""){
@@ -210,7 +210,7 @@
 
 	<!-- WYSIWYG TinyMCE //-->
 	<? if ($editor == 2) { ?>
-				
+
 		<!-- tinyMCE -->
                   <script language="javascript" type="text/javascript" src="plugins/tiny_mce/tiny_mce.js"></script>
                   <script language="javascript" type="text/javascript">
@@ -220,7 +220,7 @@
                         theme : "simple",
                         content_css : "/style/default/tinymce_content.css",
                         editor_css : "/style/default/tinymce_editor.css"
-                        
+
                   });
                   </script>
             <!-- /tinyMCE -->
@@ -274,7 +274,7 @@
 
 <div class="editor_buttons_area">
 	<? if ($edit_module == 0) {// POSTA ?>
-	<input name="refresh" type="submit" value="aktualizovat" accesskey="r" title="pro aktualizaci stránky lze také pouľít ALT+R">
+	<input name="refresh" type="submit" value="<? echo $LNG_REFRESH; ?>" accesskey="r" title="pro aktualizaci stránky lze také pouľít ALT+R">
       <input name="send" type="submit" value="<? echo $LNG_SEND; ?>" accesskey="s" title="pro odeslání lze také pouľít ALT+S">
 	<input name="preview" type="submit" value="<? echo $LNG_PREVIEW; ?>" accesskey="v" title="pro náhled lze také pouľít ALT+V">
 	<!-- zajistuje fungovani pseudonavigace (uchovani aktualniho poctu)
@@ -288,7 +288,7 @@
 		<? }elseif ($banned_wryiter == $userid && $userid != $auditor && $userid != $allower) { ?>
 		! máte zákaz zápisu !
 		<?}else{?>
-		<input name="refresh" type="submit" value="aktualizovat" accesskey="r" title="pro aktualizaci stránky lze také pouľít ALT+R">
+		<input name="refresh" type="submit" value="<? echo $LNG_REFRESH; ?>" accesskey="r" title="pro aktualizaci stránky lze také pouľít ALT+R">
             <input name="send" type="submit" value="<? echo $LNG_SEND; ?>" accesskey="s" title="pro odeslání lze také pouľít ALT+S">
 		<input name="preview" type="submit" value="<? echo $LNG_PREVIEW; ?>" accesskey="v" title="pro náhled lze také pouľít ALT+V">
 		<!-- zajistuje fungovani pseudonavigace (uchovani aktualniho poctu)

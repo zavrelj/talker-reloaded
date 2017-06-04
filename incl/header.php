@@ -128,7 +128,7 @@ $result = _oxResult("SELECT COUNT(viewed) AS viewed FROM $TABLE_MAILBOX WHERE to
 if ($result != "") {
 	$res = mysql_fetch_array($result);
 	$newnum=$res["viewed"];
-      
+
       //zde si vytahneme jmeno uzivatele, ktery zaslal jako prvni novou zpravu
       $messageFromIDArray = _oxQuery("SELECT fromid FROM $TABLE_MAILBOX WHERE toid = '$userid' AND viewed = 0 AND sender = $userid");
       $messageFromID = $messageFromIDArray['fromid'];
@@ -373,7 +373,7 @@ if ($module_number==2) {
 
 	//*********************************AKCE PREVIEW*****************************************
 	//include('incl/preview_action.php');
-	if (($preview == $LNG_PREVIEW || $refresh == 'aktualizovat') && ($db_passwd == $session_passwd)) {
+	if (($preview == $LNG_PREVIEW || $refresh == $LNG_REFRESH) && ($db_passwd == $session_passwd)) {
 		//akce preview je vyvolana, pokud obsahuje POST promenna preview prislusnou textovou hodnotu
 		//akce preview pozaduje:
 		//1. obsah zpravy ($formMessageContent)
@@ -408,7 +408,7 @@ if ($module_number==2) {
 	}
 
 	//*********************************AKCE ZOBRAZIT PRISPEVKY OD JEDNOHO UZIVATELE*****************************************
-	if ($fuser_show=="zobrazit" && $db_passwd == $session_passwd) {
+	if ($fuser_show==$LNG_SHOW && $db_passwd == $session_passwd) {
 		$isOneUser = 1;
 
 		//NAVIGACE
@@ -424,13 +424,13 @@ if ($module_number==2) {
 
 	}
 
-	
+
       if ($fuserid!=null) {
 	     $isOneUser = 1;
       }else{
 	     $isOneUser = 0;
       }
-      
+
       /* spatna verze, nefunguje na serveru!!!
       if (!isSet($fuserid)) {
 		$isOneUser = 0;
@@ -536,8 +536,8 @@ if ($module_number==11) {
 		$fuserid = $userid;
 		$_GET['note'] = 201;
 	}
-	
-	
+
+
 	if ($submodule_number==2) {
           	//prijem a zapis informaci do DB
           	$setdetails = $_POST['setdetails'];
@@ -557,16 +557,16 @@ if ($module_number==11) {
           	$weight = $_POST['weight'];
           	$eyes = $_POST['eyes'];
           	$hair = $_POST['hair'];
-                     
+
           	if ($setdetails == nastavit && $db_passwd == $session_passwd) {
           		_oxMod("UPDATE $TABLE_USERS SET name='$name', surname='$surname', birth='$birth', age='$age', address='$address', phone='$phone', e_mail='$e_mail', web='$web', icq='$icq', hobby='$hobby', sex='$sex', single='$single', height='$height', weight='$weight', eyes='$eyes', hair='$hair' WHERE userid=$userid");
-          	      $_GET['note'] = 407;       
+          	      $_GET['note'] = 407;
             }
-                     
-                     
+
+
           	//ziskani informaci z DB a jejich vypis
           	$userInfoArray = _oxQuery("SELECT login, name, surname, birth, age, address, phone, e_mail, web, icq, hobby, sex, single, height, weight, eyes, hair FROM $TABLE_USERS WHERE userid=$fuserid");
-                     
+
           	$user_info_login = $userInfoArray["login"];
           	$user_info_name = $userInfoArray["name"];
           	$user_info_surname = $userInfoArray["surname"];
@@ -584,16 +584,16 @@ if ($module_number==11) {
           	$user_info_weight = $userInfoArray["weight"];
           	$user_info_eyes = $userInfoArray["eyes"];
           	$user_info_hair = $userInfoArray["hair"];
-                     
+
           	if ($user_info_name=="" && $user_info_surname=="" && $user_info_birth=="" && $user_info_age=="" && $user_info_address=="" && $user_info_phone=="" && $user_info_email=="" && $user_info_web=="" && $user_info_icq=="" && $user_info_hobby=="" && $user_info_sex=="" && $user_info_single=="" && $user_info_height=="" && $user_info_weight=="" && $user_info_eyes=="" && $user_info_hair=="") {
           		$detail_info = 0;
           	}else{
           		$detail_info = 1;
           	}
       }
-	
-	
-	
+
+
+
 
 }
 
@@ -651,7 +651,7 @@ if ($module_number==5) {
 
 	$setstatus = $_POST['setstatus'];
 	$custom_status = $_POST['custom_status'];
-	
+
 	$setdefskin = $_POST['setdefskin'];
       $skin_select = $_POST['skin_select'];
 
@@ -660,12 +660,12 @@ if ($module_number==5) {
 	//*********************************AKCE NAHRAT IKONKU*****************************************
 	if ($upload == nahrát && $db_passwd == $session_passwd) {
 		if($userfile_size <= $ICON_MAX_SIZE) {
-						
+
                   if(($userfile_type == "image/gif") || ($userfile_type == "image/pjpeg") || ($userfile_type == "image/jpeg") || ($userfile_type == "image/x-png") || ($userfile_type == "image/png")) {
 				if (is_uploaded_file($userfile)) {
                               copy($userfile, "ico/$login.gif");
                               $_GET['note'] = 408;
-                        }      
+                        }
                   }else{
 				$_GET['note'] = 403;
 			}
@@ -709,7 +709,7 @@ if ($module_number==5) {
 		$status = $custom_status;
 		$_GET['note'] = 406;
 	}
-	
+
 	//*********************************AKCE ZMENIT SKIN*****************************************
 	if ($setdefskin == změnit && $skin_select !="" && $db_passwd == $session_passwd) {
 	     _oxMod("UPDATE $TABLE_USERS SET css='$skin_select' WHERE userid='$userid'");
@@ -752,7 +752,7 @@ if ($module_number==5) {
 
 //AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA D I S K U Z E AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 if ($module_number==10) {
-	
+
 	//na zacatku je treba zjistit, zda vstupujeme do jiz existujici mistnosti
 	$roomid = $_POST['roomid'];
 	$create_room = $_POST['create_room'];
@@ -774,7 +774,7 @@ if ($module_number==10) {
 			}
 		}
 	}
-	
+
 	//echo "roomid: ".$roomid;
 
 	if ($_GET['fuserid']!=null) {
@@ -785,7 +785,7 @@ if ($module_number==10) {
 		//pokud prislo jmeno, je treba naplnit jednak
 		$fuserid=getUserId($_POST['fusername']);
 	}
-	
+
 	//echo "FUSERID v header.php:".$fuserid."<br />";
 
 	//pokud neprislo platne fuserid nebo jmeno, bude fuseridem prihlaseny userid a zapisu error
@@ -798,10 +798,10 @@ if ($module_number==10) {
 		$fuserid = $userid;
 		$_GET['note'] = 201;
 	}
-      
+
       //*********************************AKCE CREATE***************************************
       if ($create_room == $LNG_DISCUSSION_CREATE && $db_passwd == $session_passwd) {
-      
+
                   //naplneni promennych
               $cr_roomname = $_POST['cr_roomname'];
 	            $cr_new_password = $_POST['cr_new_password'];
@@ -813,17 +813,17 @@ if ($module_number==10) {
 	            $create_subcategory_select = $_POST['create_subcategory_select'];
               $cr_homecontent_source = $_POST['cr_homecontent'];
 	            $cr_minihomecontent_source = $_POST['cr_minihomecontent'];
-                  
-                  
+
+
                   if ($create_subcategory_select==null) {
                         $create_subcategory_select=0;
                   }
-                  
+
 	            $cr_homecontent_parsed = replaceMessage($cr_homecontent_source);
 	            $cr_homecontent_parsed = addslashes($cr_homecontent_parsed);
 	            $cr_minihomecontent_parsed = replaceMessage($cr_minihomecontent_source);
 	            $cr_minihomecontent_parsed = addslashes($cr_minihomecontent_parsed);
-                  
+
 	            $cr_keepers = $_POST['cr_keepers'];
 	            $cr_deniers = $_POST['cr_deniers'];
 	            $cr_banned_writers = $_POST['cr_banned_writers'];
@@ -837,22 +837,22 @@ if ($module_number==10) {
 	            $cr_answ07 = $_POST['cr_answ07'];
 	            $cr_answ08 = $_POST['cr_answ08'];
 	            $cr_answ09 = $_POST['cr_answ09'];
-	                 
-	                 
+
+
                   //tvorba diskuze
 	            $now=time()+$SUMMER_TIME;
 	            if ($cr_delown) {$cr_delown_db=1;}else{$cr_delown_db=0;}
 	            if ($cr_allowrite) {$cr_allowrite_db=1;}else{$cr_allowrite_db=0;}
 	            if ($cr_private) {$cr_private_db=1;}else{$cr_private_db=0;}
-                  
+
 	            if ($cr_roomname == "") {
 	            	$cr_roomname = "Bez názvu";
-	            }    
-                  
+	            }
+
 	            if ($cr_new_password != $cr_new_password2) {
 	            	$cr_new_password = "";
-	            }    
-                  
+	            }
+
                   //_oxMod("INSERT INTO talker2_rooms VALUES ('LAST_INSERT_ID()', 'ZZZZZZZ', '', '0', '1', '5555', '1', '1', '', '', '', '', '1', '1', '0', '5555', '', '1')");
 	            _oxMod("INSERT INTO $TABLE_ROOMS VALUES (LAST_INSERT_ID(), '$cr_roomname', '$cr_new_password', 0, $userid, $now, $create_category_select, $create_subcategory_select, '$cr_homecontent_parsed', '$cr_homecontent_source', '$cr_minihomecontent_parsed', '$cr_minihomecontent_source', $cr_delown_db, $cr_allowrite_db, $cr_private_db, $now, '', 1)");
                   //_oxMod("INSERT INTO $TABLE_ROOMS VALUES (LAST_INSERT_ID(), '$cr_roomname', '$cr_new_password', 0, '$userid', '$now', '$create_category_select', '$create_subcategory_select', '$cr_homecontent_parsed', '$cr_homecontent_source', '$cr_minihomecontent_parsed', '$cr_minihomecontent_source', '$cr_delown_db', '$cr_allowrite_db', '$cr_private_db', '$now', '', 1)");
@@ -860,40 +860,40 @@ if ($module_number==10) {
 	            $roomid_result=_oxResult("SELECT MAX(roomid) AS roomid FROM $TABLE_ROOMS");
 	            $roomid_record=mysql_fetch_array($roomid_result);
 	            $roomid=$roomid_record["roomid"];
-                  
-              
+
+
               // AUDITOR - vyuziva se pro tvorbe spravcu, atp.
               $result_auditor = _oxResult("SELECT founderid FROM $TABLE_ROOMS WHERE roomid=$roomid");
 	            $record_auditor =mysql_fetch_array($result_auditor);
 	            $auditor=$record_auditor["founderid"];
-              
+
               //KEEPERS - tvorba spravcu
 	            $keepers_arr = split(",", $cr_keepers);
 	            $keepers_num = Count($keepers_arr);
-                  
+
 	            for ($i=0; $i<=$keepers_num-1; $i++) {
 	            	$keepers_arr[$i]=trim($keepers_arr[$i]);
 	            	$keeper_name=$keepers_arr[$i];
-	            	
+
                 //tady to vypada, ze neexistuje result, protoze to vraci chybu nasledujiciho radku, ze nemuze provest mysql_num_rows
                 $keepers_result=_oxResult("SELECT userid FROM $TABLE_USERS WHERE login='$keeper_name' AND userid!=$auditor");
 	            	if (mysql_num_rows($keepers_result) != 0) {
 	            		$keepers_record=mysql_fetch_array($keepers_result);
 	            		$keeper_id[$i] = $keepers_record["userid"];
-	            	}   
-	            }    
-                  
+	            	}
+	            }
+
 	            $keepers_num = Count($keeper_id);
 	            for ($i=0; $i<=$keepers_num-1; $i++) {
 	            	_oxMod("INSERT INTO $TABLE_ROOM_KEEPERS VALUES($roomid, $keeper_id[$i])");
-	            }    
-                  
-                  
-                  
+	            }
+
+
+
 	            //DENIERS - tvorba zakazu
 	            $deniers_arr = split(",", $cr_deniers);
 	            $deniers_num = Count($deniers_arr);
-                  
+
 	            for ($i=0; $i<=$deniers_num-1; $i++) {
 	            	$deniers_arr[$i]=trim($deniers_arr[$i]);
 	            	$denier_name=$deniers_arr[$i];
@@ -901,20 +901,20 @@ if ($module_number==10) {
 	            	if (mysql_num_rows($deniers_result) != 0) {
 	            		$deniers_record=mysql_fetch_array($deniers_result);
 	            		$denier_id[$i] = $deniers_record["userid"];
-	            	}   
-	            }    
-                  
+	            	}
+	            }
+
 	            $deniers_num = Count($denier_id);
 	            for ($i=0; $i<=$deniers_num-1; $i++) {
 	            	_oxMod("INSERT INTO $TABLE_ROOM_DENIERS VALUES($roomid, $denier_id[$i])");
-	            }    
-                  
-                  
-                  
+	            }
+
+
+
 	            //BANNED_WRITERS - tvorba zabanovanych
 	            $banned_writers_arr = split(",", $cr_banned_writers);
 	            $banned_writers_num = Count($banned_writers_arr);
-                  
+
 	            for ($i=0; $i<=$banned_writers_num-1; $i++) {
 	            	$banned_writers_arr[$i]=trim($banned_writers_arr[$i]);
 	            	$banned_writer_name=$banned_writers_arr[$i];
@@ -922,71 +922,71 @@ if ($module_number==10) {
 	            	if (mysql_num_rows($banned_writers_result) != 0) {
 	            		$banned_writers_record=mysql_fetch_array($banned_writers_result);
 	            		$banned_writer_id[$i] = $banned_writers_record["userid"];
-	            	}   
-	            }    
-                  
+	            	}
+	            }
+
 	            $banned_writers_num = Count($banned_writer_id);
 	            for ($i=0; $i<=$banned_writers_num-1; $i++) {
 	            	_oxMod("INSERT INTO $TABLE_ROOM_BANNED_WRITERS VALUES($roomid, $banned_writer_id[$i])");
-	            }    
-                  
+	            }
+
              	//BOOKMARK - prida diskuzi do seznamu sledovanych diskuzi vlastnika
 	            _oxMod("INSERT INTO $TABLE_ROOMS_BOOKMARKS VALUES ($userid, $roomid)");
-                  
-                  
-                                   
+
+
+
 	            //POOL - ze zadanych odpovedi do ankety vytvori pole
 	            $cr_pool_data = Array($cr_answ01, $cr_answ02, $cr_answ03, $cr_answ04, $cr_answ05, $cr_answ06, $cr_answ07, $cr_answ08, $cr_answ09);
-                  
+
 	            //pole slouci v textovou promennou odpovedi
 	            for ($i=0; $i<=8; $i++) {
 	            	if ($cr_pool_data[$i] != "") {
 	            		$cr_count++;
 	            		$cr_answ_text = $cr_answ_text.$cr_pool_data[$i]."#";
-	            	}   
-	            }    
-                  
+	            	}
+	            }
+
 	            //pokud neni otazka ani textova promenna odpovedi prazdne, vytvori anketu
 	            if ($cr_question !="" && $cr_answ_text !="") {
-                  
-                  
+
+
 	            	if ($anonym) {
 	            		_oxMod("INSERT INTO $TABLE_POOLS VALUES('', $roomid, '$cr_question', '', '', '', '', '', '', '', '', '', $cr_count, '$cr_answ_text', 0,'',0)");
 	            	}else{
 	            		_oxMod("INSERT INTO $TABLE_POOLS VALUES('', $roomid, '$cr_question', '', '', '', '', '', '', '', '', '', $cr_count, '$cr_answ_text', 0,'',1)");
-	            	}   
-	            }    
-                  
-                  
-      
-      
-      
+	            	}
+	            }
+
+
+
+
+
       }
-      
-      
+
+
       // NASTAVENI DISKUZE
       if ($submodule_number==1) {
              //********************************PROMENNE************************************************
-             $changename = $_POST['changename']; 
-            
-            
+             $changename = $_POST['changename'];
+
+
             //*********************************AKCE ZMENIT NAZEV***************************************
             if ($changename == změnit && $db_passwd == $session_passwd) {
               echo "změna jména diskuze je zatím nefunkční";
             }
-      
+
       }
-      
-      
-      
-      
+
+
+
+
   //*********************************ZAKLADNI NASTAVENI*****************************************
 	$result_auditor = _oxResult("SELECT founderid FROM $TABLE_ROOMS WHERE roomid=$roomid");
 	$record_auditor =mysql_fetch_array($result_auditor);
 	$auditor=$record_auditor["founderid"];
-      
+
       //musime zjistit, jaky je pouzity editor
-	      
+
       //zjistime, zda je diskuze sledovana a podle toho nastavime volbu
       $result3 = _oxResult("SELECT FK_user FROM $TABLE_ROOMS_BOOKMARKS WHERE FK_user=$userid AND FK_room=$roomid");
       $record3 = mysql_fetch_array($result3);
@@ -995,9 +995,9 @@ if ($module_number==10) {
       }else{
            	$bookvalue="sledovat";
       }
-         
-      
-	
+
+
+
 
 
 	//*********************************PROMENNE*****************************************
@@ -1080,10 +1080,10 @@ if ($module_number==10) {
 	$new_password = $_POST['new_password'];
 	$new_password2 = $_POST['new_password2'];
 
-      
+
       //*********************************AKCE SEND*****************************************
 	if ($send == $LNG_SEND && $db_passwd == $session_passwd) {
-		            
+
             //akce send je vyvolana, pokud obsahuje POST promenna send prislusnou textovou hodnotu
 		//akce send pozaduje:
 		//1. obsah zpravy ($formMessageContent)
@@ -1092,7 +1092,7 @@ if ($module_number==10) {
 		//1. MessageContent
 		//kontrola obsahu zpravy se provede pouze v plaintext editorech
 		$uncheckedMessageContent = $_POST['formMessageContent'];
-				
+
 		if ($editor == 0 || $editor == 1) {
 			$parsedMessageContent = replaceMessage($uncheckedMessageContent);
 			$parsedMessageContent = addslashes($parsedMessageContent);
@@ -1150,7 +1150,7 @@ if ($module_number==10) {
 
 	//*********************************AKCE PREVIEW*****************************************
 	//include('incl/preview_action.php');
-	if (($preview == $LNG_PREVIEW || $refresh == 'aktualizovat') && ($db_passwd == $session_passwd)) {
+	if (($preview == $LNG_PREVIEW || $refresh == $LNG_REFRESH) && ($db_passwd == $session_passwd)) {
 		//akce preview je vyvolana, pokud obsahuje POST promenna preview prislusnou textovou hodnotu
 		//akce preview pozaduje:
 		//1. obsah zpravy ($formMessageContent)
@@ -1192,7 +1192,7 @@ if ($module_number==10) {
 	//pokud se jedna o diskuzi, je treba rozlisit, zda jde o privatni ci nikoliv
 	//pokud se jedna o informace o uzivateli, pak doplnit jmeno uzivatele
 	if ($invisible != 1) {
-	     /* TOHLE ZAPNOUT, KDYBY TO DOLE NESLO 
+	     /* TOHLE ZAPNOUT, KDYBY TO DOLE NESLO
            $privateArray = _oxQuery("SELECT private FROM $TABLE_ROOMS WHERE roomid='$roomid'");
 		$is_private = $privateArray["private"];
 		if ($is_private == 0) {
@@ -1204,11 +1204,11 @@ if ($module_number==10) {
 			//echo "diskuze je privatni";
 			_oxMod("UPDATE $TABLE_USERS SET location='$module_name' WHERE userid='$userid'");
 		}
-            */	
+            */
 	}
-	
-	
-	
+
+
+
 	//*********************************AKCE BOOKMARK*****************************************
       if($book == sledovat && $db_passwd == $session_passwd) {
 
@@ -1228,7 +1228,7 @@ if ($module_number==10) {
 	     _oxMod("DELETE FROM $TABLE_ROOMS_BOOKMARKS WHERE FK_user=$userid AND FK_room=$roomid");
 	     _oxMod("UPDATE $TABLE_ROOMS SET book_count=book_count-1 WHERE roomid=$roomid");
       }
-      
+
       //zjistime, zda je diskuze sledovana a podle toho nastavime volbu
       $result3 = _oxResult("SELECT FK_user FROM $TABLE_ROOMS_BOOKMARKS WHERE FK_user=$userid AND FK_room=$roomid");
       $record3 = mysql_fetch_array($result3);
@@ -1237,10 +1237,10 @@ if ($module_number==10) {
       }else{
            	$bookvalue="sledovat";
       }
-     
-      
-      
-      
+
+
+
+
 
 
 
@@ -1310,12 +1310,12 @@ if ($invisible != 1) {
 	if ($module_number==4){ //uzivatele
 		//$sess_out = updatelastaction($userid, "sekci INFORMACE O UŽIVATELI ".$infologin);
 		_oxMod("UPDATE $TABLE_USERS SET location='$module_name' WHERE userid='$userid'");
-	
-      
-      
+
+
+
       }elseif($module_number==10) { //diskuze
-	               
-           
+
+
            //tenhle if tu musi byt, prestoze je prazdny! diky nemu to funguje, ted nemam naladu resit proc, hlavne ze jo!
 	     // TOHLE VYPNOUT, KDYBY TO NESLO a ZAPNOUT NAHORE
            $privateArray = _oxQuery("SELECT private FROM $TABLE_ROOMS WHERE roomid='$roomid'");
@@ -1329,10 +1329,10 @@ if ($invisible != 1) {
 			//echo "diskuze je privatni";
 			_oxMod("UPDATE $TABLE_USERS SET location='$module_name' WHERE userid='$userid'");
 		}
-      
-      
-      
-      }else{	
+
+
+
+      }else{
             _oxMod("UPDATE $TABLE_USERS SET location='$module_name' WHERE userid='$userid'");
 	}
 }

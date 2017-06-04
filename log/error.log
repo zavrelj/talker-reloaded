@@ -152,3 +152,11 @@
  
 10.09.2007 00:34:14 | internal error 2003:Can't connect to MySQL server on 'mysql22.ixwebhosting.com' (4)
  
+04.06.2017 07:14:51 | internal error 1045:Access denied for user 'dszavrelnet'@'localhost' (using password: YES)
+ 
+04.06.2017 07:15:02 | internal error 1045:Access denied for user 'dszavrelnet'@'localhost' (using password: YES)
+ 
+04.06.2017 07:18:21 | internal error 1049:Unknown database 'janzavjcb137cz1044_dszavrelnet'
+ 
+04.06.2017 07:20:57 | internal error 1049:Unknown database 'janzavjcb137cz1044_dszavrelnet'
+ 

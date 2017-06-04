@@ -15,7 +15,7 @@ $fuser_show = $_POST['fuser_show'];
 //echo "fuserid: ".$fuserid;
 
 
-if ($fuser_show=="zobrazit" && $db_passwd == $session_passwd) {
+if ($fuser_show==$LNG_SHOW && $db_passwd == $session_passwd) {
 	$isOneUser = 1;
 
 	//NAVIGACE
@@ -37,7 +37,7 @@ if ($fuserid!=null) {
 }else{
     $isOneUser = 0;
 }
-      
+
 /* spatna verze, nefunguje na serveru!!!
 if (!isSet($fuserid)) {
       $isOneUser = 0;
@@ -79,8 +79,3 @@ if ($submodule_number==2) {
 	include('incl/live_search.php');
 }
 ?>
-
-
-
-
-

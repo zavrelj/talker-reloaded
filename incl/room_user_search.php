@@ -2,5 +2,5 @@
 <label>zobrazit pouze příspěvky od uživatele:</label>
 <input type="text" name="fusername">
 <input type="hidden" name="roomid" value="<? echo $roomid ?>">
-<input type="submit" name="fuser_show" value="zobrazit">
+<input type="submit" name="fuser_show" value="<? echo $LNG_SHOW; ?>">
 </form>
